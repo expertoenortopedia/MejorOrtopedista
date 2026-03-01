@@ -58,7 +58,7 @@ export function Navbar() {
             </ul>
 
             <a
-              href="https://wa.me/5215500000000" // Replace with real number
+              href="https://wa.me/525514961386" // Replace with real number
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all shadow-md shadow-green-600/20 hover:shadow-lg hover:shadow-green-600/30 hover:-translate-y-0.5"
@@ -107,7 +107,7 @@ export function Navbar() {
           </ul>
           <div className="px-4">
             <a
-              href="https://wa.me/5215500000000"
+              href="https://wa.me/525514961386"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 bg-green-600 text-white px-5 py-3 rounded-xl text-base font-semibold w-full"

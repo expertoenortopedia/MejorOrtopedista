@@ -10,7 +10,7 @@ import doctorImg from "@/assets/images/doctor-portrait.png";
 import clinicImg from "@/assets/images/clinic-interior.png";
 
 export default function Home() {
-  const WHATSAPP_LINK = "https://wa.me/5215500000000?text=Hola%20Dr.%20Jorge,%20vengo%20de%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20agendar%20una%20cita.";
+  const WHATSAPP_LINK = "https://wa.me/525514961386?text=Hola%20Dr.%20Jorge,%20vengo%20de%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20agendar%20una%20cita.";
 
   return (
     <div className="w-full bg-background overflow-hidden">
