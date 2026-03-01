@@ -22,15 +22,15 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-sm">
                 <MapPin className="h-5 w-5 text-primary shrink-0" />
-                <span>Estado de México, México<br/>(Consultorio Privado)</span>
+                <span>Hospital Star Médica Luna Parc</span>
               </li>
               <li className="flex items-center gap-3 text-sm">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
-                <span>+52 (55) 0000-0000</span>
+                <span>+52 (55) 5881-8743</span>
               </li>
               <li className="flex items-center gap-3 text-sm">
                 <Clock className="h-5 w-5 text-primary shrink-0" />
-                <span>Lunes a Sábado, previa cita</span>
+                <span>Martes, Jueves, Sábado, previa cita</span>
               </li>
             </ul>
           </div>
