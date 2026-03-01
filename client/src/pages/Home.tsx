@@ -328,10 +328,12 @@ export default function Home() {
                 Agendar por WhatsApp
               </Button>
             </a>
-            <Button size="lg" variant="outline" className="h-16 px-8 text-lg bg-transparent text-white border-white/30 hover:bg-white/10 rounded-xl gap-3">
-              Ver ubicación en mapa
-              <ArrowRight className="w-5 h-5" />
-            </Button>
+            <a href="https://g.co/kgs/eVj8vhe" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" variant="outline" className="h-16 px-8 text-lg bg-transparent text-white border-white/30 hover:bg-white/10 rounded-xl gap-3">
+                Ver ubicación en mapa
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </a>
           </div>
         </div>
       </section>
