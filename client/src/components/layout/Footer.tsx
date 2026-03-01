@@ -54,8 +54,8 @@ export function Footer() {
             </p>
             <div className="pt-2">
               <span className="text-xs text-slate-500">
-                Cédula Profesional: XXXXXXX<br/>
-                Cédula Especialidad: XXXXXXX
+                Cédula Profesional: 2814883<br/>
+                Cédula Especialidad: 4255209
               </span>
             </div>
           </div>
