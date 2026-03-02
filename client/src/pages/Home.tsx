@@ -201,12 +201,12 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-5 gap-12 items-center">
             
-            <div className="lg:col-span-2 order-2 lg:order-1 relative">
+            <div className="lg:col-span-2 order-2 lg:order-1 relative flex items-center justify-center">
               <div className="absolute inset-0 bg-primary/5 rounded-[2rem] transform -rotate-3 scale-105" />
               <img 
-                src={doctorImg} 
+                src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772410036/FotodelGeorge_menos5MB_c57hjv.jpg"
                 alt="Dr. Jorge Luis Córdova Fonseca" 
-                className="relative rounded-[2rem] shadow-xl w-full object-cover"
+                className="relative rounded-[2rem] shadow-xl w-full aspect-[3/4] object-cover object-top"
               />
             </div>
 
