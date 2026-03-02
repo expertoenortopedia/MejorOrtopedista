@@ -32,13 +32,16 @@ export async function registerRoutes(
 
   app.post("/api/blog", async (req, res) => {
     try {
+      console.log("POST /api/blog body:", JSON.stringify(req.body));
       const parsed = insertBlogPostSchema.safeParse(req.body);
       if (!parsed.success) {
+        console.log("Validation errors:", JSON.stringify(parsed.error.flatten()));
         return res.status(400).json({ message: "Datos inválidos", errors: parsed.error.flatten() });
       }
       const post = await storage.createBlogPost(parsed.data);
       res.status(201).json(post);
     } catch (error: any) {
+      console.error("Error creating blog post:", error);
       if (error?.code === "23505") {
         return res.status(409).json({ message: "Ya existe un artículo con ese slug" });
       }
