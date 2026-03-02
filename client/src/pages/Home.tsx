@@ -64,7 +64,7 @@ export default function Home() {
                   <div className="flex text-yellow-400">
                     {[1,2,3,4,5].map(i => <Star key={i} className="w-4 h-4 fill-current" />)}
                   </div>
-                  <p className="text-sm font-medium mt-1">+500 pacientes recuperados</p>
+                  <p className="text-sm font-medium mt-1">+1000 pacientes recuperados</p>
                 </div>
               </div>
             </div>
