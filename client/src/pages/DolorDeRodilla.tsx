@@ -99,10 +99,11 @@ export default function DolorDeRodilla() {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?w=800&q=80"
-                alt="Paciente con dolor de rodilla siendo evaluado por ortopedista especialista"
+                src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772492074/ChatGPT_Image_2_mar_2026_04_46_07_p.m._mglgrw.png"
+                alt="Dolor de rodilla ortopedia especialista en Cuautitlán Izcalli"
                 className="rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]"
                 loading="eager"
+                decoding="async"
                 data-testid="img-hero-rodilla"
               />
               <div className="absolute -bottom-4 -left-4 bg-white rounded-xl shadow-lg p-4 hidden md:block">
