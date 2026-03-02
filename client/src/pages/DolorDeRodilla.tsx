@@ -154,10 +154,12 @@ export default function DolorDeRodilla() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <img
-                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80"
-                alt="Consulta médica ortopédica para evaluación de dolor de rodilla"
+                src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772492995/ChatGPT_Image_2_mar_2026_05_09_46_p.m._xkrkbn.png"
+                alt="Dolor de rodilla por desgaste articular tratado con cirugía especializada"
+                title="Especialista en cirugía de rodilla y desgaste articular"
                 className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
                 loading="lazy"
+                decoding="async"
                 data-testid="img-alertas"
               />
             </div>
