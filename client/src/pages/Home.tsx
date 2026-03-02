@@ -30,7 +30,7 @@ export default function Home() {
               </div>
               
               <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] text-foreground">
-                Especialista en dolor de rodilla y hombro — <span className="text-primary italic">Recupera tu movilidad</span> y calidad de vida
+                Ortopedista en Estado de México <span className="text-primary italic">especialista en rodilla y hombro</span>
               </h1>
               
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
