@@ -1,0 +1,123 @@
+Publica un nuevo artículo en el blog de mi página web (Vite + React) enfocado en educación médica para pacientes.
+
+OBJETIVO:
+Artículo dirigido a pacientes sobre tratamientos “milagro”, prácticas de charlatanería y terapias no recomendadas en trastornos ortopédicos. Debe ser informativo, ético, sin ataques directos, pero firme en evidencia científica.
+
+CONFIGURACIÓN SEO:
+
+SLUG:
+/blog/tratamientos-milagro-ortopedia
+
+TITLE SEO:
+Tratamientos milagro en ortopedia: cómo identificarlos y evitar riesgos
+
+META DESCRIPTION:
+Aprende a identificar tratamientos milagro y prácticas no recomendadas en problemas ortopédicos. Información basada en evidencia médica.
+
+KEYWORDS:
+tratamientos milagro ortopedia
+charlatanería médica
+dolor de rodilla tratamiento falso
+lesiones ortopédicas sin evidencia
+especialista en ortopedia confiable
+
+AUTOR:
+Dr. George [APELLIDO]
+
+CATEGORÍA:
+Educación del Paciente
+
+IMAGEN PRINCIPAL:
+/images/consulta-ortopedica-profesional.webp
+
+ALT IMAGEN:
+Consulta con ortopedista certificado evaluando problema musculoesquelético
+
+ESTRUCTURA DEL CONTENIDO (obligatoria):
+
+1. Introducción
+   Explicar por qué cuando existe dolor crónico (rodilla, columna, hombro) las personas son vulnerables a promesas de curas rápidas.
+
+2. ¿Qué son los “tratamientos milagro”?
+   Definir:
+
+* Promesas de curación inmediata
+* Resultados garantizados
+* Testimonios sin respaldo científico
+* Terapias sin estudios clínicos publicados
+
+3. Ejemplos frecuentes en trastornos ortopédicos:
+
+* Inyecciones “regenerativas” sin sustento científico
+* Productos naturales que prometen reconstruir cartílago
+* Aparatos magnéticos o energéticos sin evidencia
+* Manipulaciones agresivas sin diagnóstico
+* Paquetes costosos sin valoración médica adecuada
+
+(Explicar sin mencionar marcas ni atacar personas específicas)
+
+4. ¿Por qué pueden ser peligrosos?
+
+* Retrasan tratamiento adecuado
+* Aumentan riesgo de daño estructural
+* Pérdida económica
+* Falsa expectativa
+* Complicaciones médicas
+
+5. Cómo identificar prácticas poco confiables:
+
+* No muestran cédula profesional verificable
+* No solicitan estudios de imagen
+* No explican diagnóstico claro
+* No mencionan riesgos
+* Ofrecen descuentos por “tiempo limitado”
+
+6. ¿Qué debe buscar un paciente?
+
+* Médico especialista certificado
+* Valoración clínica completa
+* Diagnóstico sustentado
+* Explicación de alternativas
+* Plan de tratamiento individualizado
+* Rehabilitación profesional
+
+7. Importancia de la medicina basada en evidencia en ortopedia.
+
+8. Conclusión
+   Mensaje claro:
+   No existen soluciones mágicas para lesiones musculoesqueléticas. El tratamiento adecuado depende de diagnóstico correcto.
+
+CTA FINAL:
+Agenda tu valoración con ortopedista especialista.
+
+BOTÓN:
+/contacto
+
+REQUISITOS TÉCNICOS:
+
+1. Crear archivo:
+   /src/pages/blog/TratamientosMilagroOrtopedia.jsx
+
+2. Integrar React Helmet para:
+
+* title
+* meta description
+* keywords
+
+3. Optimizar estructura con:
+   H1 único
+   H2 y H3 jerarquizados
+
+4. Imagen con:
+   loading="lazy"
+   decoding="async"
+   width y height definidos
+
+5. Diseño profesional tipo clínica privada.
+
+6. Optimizado para Lighthouse 100 en SEO y performance.
+
+7. Agregar al listado principal del blog.
+
+NO EXPLICAR.
+IMPLEMENTAR DIRECTAMENTE.
