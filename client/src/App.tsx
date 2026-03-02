@@ -13,6 +13,7 @@ import BlogPost from "@/pages/BlogPost";
 import BlogAdmin from "@/pages/BlogAdmin";
 import DolorDeRodilla from "@/pages/DolorDeRodilla";
 import LesionMenisco from "@/pages/LesionMenisco";
+import LigamentoCruzado from "@/pages/LigamentoCruzado";
 
 function Router() {
   return (
@@ -20,6 +21,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/dolor-de-rodilla-cuautitlan-izcalli" component={DolorDeRodilla} />
       <Route path="/lesion-menisco-cuautitlan-izcalli" component={LesionMenisco} />
+      <Route path="/ligamento-cruzado-anterior-cuautitlan-izcalli" component={LigamentoCruzado} />
       <Route path="/marketing" component={Marketing} />
       <Route path="/admin/blog" component={BlogAdmin} />
       <Route path="/blog-admin" component={BlogAdmin} />

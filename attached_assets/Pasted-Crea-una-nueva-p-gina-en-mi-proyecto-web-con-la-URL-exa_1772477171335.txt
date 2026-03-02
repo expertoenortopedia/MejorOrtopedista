@@ -1,0 +1,180 @@
+Crea una nueva página en mi proyecto web con la URL exacta:
+
+/ligamento-cruzado-anterior-cuautitlan-izcalli
+
+Debe integrarse perfectamente con el diseño actual del sitio, usando el mismo header, footer, estilos, colores, fuentes y componentes.
+
+OBJETIVO:
+
+Página médica informativa orientada a pacientes sobre la lesión del ligamento cruzado anterior (LCA), optimizada para SEO local en Cuautitlán Izcalli y conversión a consulta por WhatsApp.
+
+DOCTOR:
+
+Dr. Jorge Luis Córdova
+Ortopedista especialista en rodilla en Cuautitlán Izcalli
+
+OPTIMIZACIÓN SEO:
+
+Title:
+Lesión del Ligamento Cruzado Anterior en Cuautitlán Izcalli | Especialista en Rodilla
+
+Meta description:
+Conoce los síntomas de la lesión del ligamento cruzado anterior, causas y cuándo acudir al especialista en rodilla en Cuautitlán Izcalli. Agenda tu cita.
+
+URL:
+ /ligamento-cruzado-anterior-cuautitlan-izcalli
+
+H1:
+Lesión del Ligamento Cruzado Anterior de la Rodilla: síntomas, diagnóstico y tratamiento
+
+---
+
+ESTRUCTURA DE CONTENIDO:
+
+SECCIÓN 1 — Imagen principal y explicación general
+
+Agregar imagen médica profesional desde Unsplash:
+
+https://images.unsplash.com/photo-1576091160550-2173dba999ef
+
+Agregar texto en lenguaje sencillo explicando:
+
+Qué es el ligamento cruzado anterior
+
+Cuál es su función
+
+Cómo ocurre la lesión
+
+En qué personas es más frecuente
+
+Agregar botón visible:
+
+Texto:
+Agendar cita por WhatsApp
+
+Link:
+https://wa.me/521XXXXXXXXXX
+
+---
+
+SECCIÓN 2 — Síntomas de la lesión del ligamento cruzado anterior
+
+Lista clara nivel paciente:
+
+Dolor intenso al momento de la lesión
+
+Sensación de que la rodilla falla
+
+Inflamación rápida
+
+Dificultad para caminar
+
+Inestabilidad
+
+Dificultad para actividades deportivas
+
+Agregar imagen médica:
+
+https://images.unsplash.com/photo-1580281657527-47d97f3b7f0d
+
+---
+
+SECCIÓN 3 — Cuándo debes acudir con un especialista en rodilla
+
+Explicar claramente:
+
+Rodilla inestable
+
+Inflamación persistente
+
+Limitación funcional
+
+Lesión deportiva
+
+Sensación de inseguridad al caminar
+
+Agregar imagen profesional médica:
+
+https://images.unsplash.com/photo-1588776814546-daab30f310ce
+
+---
+
+SECCIÓN 4 — Tratamientos disponibles
+
+Explicar en lenguaje sencillo:
+
+Tratamiento conservador
+
+Rehabilitación
+
+Terapia física
+
+Cirugía de reconstrucción del ligamento cruzado anterior en pacientes seleccionados
+
+Agregar imagen médica:
+
+https://images.unsplash.com/photo-1559757175-5700dde675bc
+
+---
+
+SECCIÓN 5 — Atención especializada en rodilla en Cuautitlán Izcalli
+
+Texto profesional orientado a confianza:
+
+Evaluación completa
+
+Diagnóstico preciso
+
+Tratamiento personalizado
+
+Especialista en lesiones de rodilla
+
+---
+
+SECCIÓN 6 — Botón final de conversión
+
+Botón grande centrado:
+
+AGENDAR CITA POR WHATSAPP
+
+Link:
+
+https://wa.me/521XXXXXXXXXX
+
+---
+
+REQUISITOS TÉCNICOS IMPORTANTES:
+
+La página debe:
+
+Ser completamente responsive
+
+Optimizada para SEO
+
+Usar etiquetas correctas H1, H2, H3
+
+Agregar atributo ALT optimizado SEO en todas las imágenes
+
+Cargar rápido
+
+Mantener el diseño actual del sitio
+
+No modificar otras páginas
+
+Crear la ruta funcional correctamente
+
+---
+
+AGREGAR TAMBIÉN:
+
+Schema markup tipo MedicalWebPage
+
+Incluir datos estructurados básicos del doctor como MedicalBusiness
+
+---
+
+IMPORTANTE:
+
+No modificar otras páginas existentes
+
+Solo crear esta nueva página completamente funcional e integrada al sitio
