@@ -1,0 +1,165 @@
+Crea una nueva página en mi proyecto web con la URL exacta:
+
+/dolor-de-rodilla-cuautitlan-izcalli
+
+Debe estar completamente integrada a mi sitio existente, usando el mismo header, footer, estilos, fuentes y diseño.
+
+OBJETIVO:
+Página médica informativa orientada a pacientes sobre dolor de rodilla, optimizada para SEO local y conversión a consulta médica.
+
+DOCTOR:
+Dr. Jorge Luis Córdova
+Ortopedista especialista en rodilla en Cuautitlán Izcalli
+
+OPTIMIZACIÓN SEO:
+
+Title:
+Dolor de Rodilla en Cuautitlán Izcalli | Ortopedista Especialista en Rodilla
+
+Meta description:
+Tratamiento del dolor de rodilla en Cuautitlán Izcalli. Conoce causas, síntomas y cuándo acudir al ortopedista especialista en rodilla. Agenda tu cita.
+
+H1:
+Dolor de Rodilla: causas, síntomas y tratamiento en Cuautitlán Izcalli
+
+ESTRUCTURA DE LA PÁGINA:
+
+Sección 1 — Imagen principal
+
+Agregar imagen médica profesional de dolor de rodilla desde Unsplash relacionada a rodilla:
+
+https://images.unsplash.com/photo-1588776814546-daab30f310ce
+
+Agregar texto introductorio claro, lenguaje nivel paciente, explicando qué es el dolor de rodilla.
+
+Agregar botón WhatsApp visible que diga:
+
+"Agendar cita por WhatsApp"
+
+con link:
+
+https://wa.me/521XXXXXXXXXX
+
+(usar ese formato, luego yo cambiaré el número)
+
+---
+
+Sección 2 — Síntomas frecuentes
+
+Lista clara:
+
+Dolor al caminar
+
+Dolor al subir o bajar escaleras
+
+Inflamación
+
+Rigidez
+
+Sensación de desgaste
+
+Inestabilidad
+
+Agregar imagen relacionada:
+
+https://images.unsplash.com/photo-1597764699510-0b7c9c3d0a8c
+
+---
+
+Sección 3 — Cuándo debes acudir con un ortopedista
+
+Explicar claramente señales de alerta:
+
+Dolor persistente
+
+Inflamación frecuente
+
+Limitación para caminar
+
+Lesión previa
+
+Dolor que no mejora
+
+Agregar imagen médica:
+
+https://images.unsplash.com/photo-1576091160550-2173dba999ef
+
+---
+
+Sección 4 — Tratamientos disponibles
+
+Explicar en lenguaje sencillo:
+
+Medicamentos
+
+Terapia física
+
+Infiltraciones
+
+Cirugía (solo en casos necesarios)
+
+Agregar imagen médica profesional:
+
+https://images.unsplash.com/photo-1580281657527-47d97f3b7f0d
+
+---
+
+Sección 5 — Por qué elegir al Dr Jorge Córdova
+
+Texto profesional orientado a generar confianza
+
+Especialista en rodilla
+
+Atención profesional
+
+Tratamiento personalizado
+
+---
+
+Sección 6 — Botón grande de WhatsApp
+
+Botón destacado centrado:
+
+AGENDAR CITA POR WHATSAPP
+
+Link:
+
+https://wa.me/521XXXXXXXXXX
+
+---
+
+REQUISITOS TÉCNICOS IMPORTANTES:
+
+La página debe:
+
+Cargar rápido
+
+Ser responsive
+
+Ser compatible con mi proyecto actual
+
+No romper el sitio existente
+
+Usar los mismos componentes
+
+Estar optimizada para SEO
+
+Usar etiquetas H1, H2, H3 correctamente
+
+Agregar ALT a todas las imágenes
+
+---
+
+Agregar también:
+
+Schema markup médico básico
+
+---
+
+IMPORTANTE:
+
+Crear el archivo correctamente y hacerlo accesible desde el sitio.
+
+No modificar otras páginas.
+
+Solo crear esta nueva página completa y funcional.
