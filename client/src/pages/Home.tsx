@@ -218,6 +218,9 @@ export default function Home() {
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   Soy médico especialista en Ortopedia y Traumatología con subespecialidad en cirugía articular y artroscopia. Entiendo perfectamente la frustración y el miedo que causa el dolor limitante.
                 </p>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Cuento con más de 25 años de experiencia y soy profesor de la subespecialidad, formando médicos nacionales e internacionales en el área de Ortopedia y Traumatología.
+                </p>
                 <p className="text-muted-foreground leading-relaxed">
                   En mi consulta privada en el Estado de México, te garantizo una evaluación exhaustiva, empatía genuina y un diagnóstico transparente. No te recomendaré tratamientos innecesarios, solo lo que científicamente es mejor para tu salud.
                 </p>
