@@ -118,25 +118,37 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: "Dolor de rodilla", desc: "Soluciones para dolor crónico, chasquidos al caminar, inflamación y limitación de movimiento.", icon: Activity },
+              { title: "Dolor de rodilla", desc: "Soluciones para dolor crónico, chasquidos al caminar, inflamación y limitación de movimiento.", icon: Activity, link: "/dolor-de-rodilla-cuautitlan-izcalli" },
               { title: "Lesión de meniscos", desc: "Atención especializada si sientes bloqueos en la rodilla, dolor agudo al rotar o inestabilidad.", icon: Bone },
               { title: "Ligamento cruzado", desc: "Reconstrucción y tratamiento tras lesiones deportivas o accidentes que causan fallo en la rodilla.", icon: HeartPulse },
               { title: "Desgaste articular (Artrosis)", desc: "Tratamientos para el desgaste del cartílago. Retrasamos el avance y aliviamos el dolor profundo.", icon: Stethoscope },
               { title: "Dolor de hombro", desc: "Alivio para dolor al levantar el brazo, manguito rotador, tendinitis y hombro congelado.", icon: UserCheck },
               { title: "Lesiones deportivas", desc: "Recuperación rápida y segura para que regreses a tu deporte favorito en tu máximo rendimiento.", icon: Award },
-            ].map((item, idx) => (
-              <Card key={idx} className="border border-slate-100 hover:border-primary/20 shadow-sm hover:shadow-md transition-all group overflow-hidden">
-                <CardContent className="p-8">
-                  <div className="mb-6 p-4 bg-slate-50 group-hover:bg-primary/5 rounded-2xl w-16 h-16 flex items-center justify-center transition-colors">
-                    <item.icon className="w-8 h-8 text-primary group-hover:scale-110 transition-transform" />
-                  </div>
-                  <h4 className="text-xl font-bold mb-3">{item.title}</h4>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {item.desc}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
+            ].map((item, idx) => {
+              const cardContent = (
+                <Card key={idx} className={`border border-slate-100 hover:border-primary/20 shadow-sm hover:shadow-md transition-all group overflow-hidden ${item.link ? "cursor-pointer" : ""}`} data-testid={`card-specialty-${idx}`}>
+                  <CardContent className="p-8">
+                    <div className="mb-6 p-4 bg-slate-50 group-hover:bg-primary/5 rounded-2xl w-16 h-16 flex items-center justify-center transition-colors">
+                      <item.icon className="w-8 h-8 text-primary group-hover:scale-110 transition-transform" />
+                    </div>
+                    <h4 className="text-xl font-bold mb-3">{item.title}</h4>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {item.desc}
+                    </p>
+                    {item.link && (
+                      <span className="inline-flex items-center text-primary text-sm font-medium mt-3 group-hover:translate-x-1 transition-transform">
+                        Más información <ChevronRight className="w-4 h-4 ml-1" />
+                      </span>
+                    )}
+                  </CardContent>
+                </Card>
+              );
+              return item.link ? (
+                <Link key={idx} href={item.link} className="block">
+                  {cardContent}
+                </Link>
+              ) : cardContent;
+            })}
           </div>
 
           <div className="mt-12 text-center">

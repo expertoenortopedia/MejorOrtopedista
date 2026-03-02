@@ -11,11 +11,13 @@ import Marketing from "@/pages/Marketing";
 import Blog from "@/pages/Blog";
 import BlogPost from "@/pages/BlogPost";
 import BlogAdmin from "@/pages/BlogAdmin";
+import DolorDeRodilla from "@/pages/DolorDeRodilla";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/dolor-de-rodilla-cuautitlan-izcalli" component={DolorDeRodilla} />
       <Route path="/marketing" component={Marketing} />
       <Route path="/admin/blog" component={BlogAdmin} />
       <Route path="/blog-admin" component={BlogAdmin} />
