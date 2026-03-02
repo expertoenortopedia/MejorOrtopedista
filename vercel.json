@@ -1,4 +1,18 @@
 {
   "framework": "vite",
-  "outputDirectory": "dist/public"
+  "outputDirectory": "dist/public",
+  "rewrites": [
+    {
+      "source": "/blog/(.*)",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/admin/(.*)",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/marketing",
+      "destination": "/index.html"
+    }
+  ]
 }
