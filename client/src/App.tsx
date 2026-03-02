@@ -15,6 +15,7 @@ import DolorDeRodilla from "@/pages/DolorDeRodilla";
 import LesionMenisco from "@/pages/LesionMenisco";
 import LigamentoCruzado from "@/pages/LigamentoCruzado";
 import Artrosis from "@/pages/Artrosis";
+import DolorHombro from "@/pages/DolorHombro";
 
 function Router() {
   return (
@@ -24,6 +25,7 @@ function Router() {
       <Route path="/lesion-menisco-cuautitlan-izcalli" component={LesionMenisco} />
       <Route path="/ligamento-cruzado-anterior-cuautitlan-izcalli" component={LigamentoCruzado} />
       <Route path="/artrosis-rodilla-cadera-cuautitlan-izcalli" component={Artrosis} />
+      <Route path="/dolor-hombro-manguito-rotador-cuautitlan-izcalli" component={DolorHombro} />
       <Route path="/marketing" component={Marketing} />
       <Route path="/admin/blog" component={BlogAdmin} />
       <Route path="/blog-admin" component={BlogAdmin} />

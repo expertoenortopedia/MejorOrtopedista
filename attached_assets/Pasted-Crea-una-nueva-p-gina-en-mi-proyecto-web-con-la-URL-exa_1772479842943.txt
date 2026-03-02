@@ -1,0 +1,184 @@
+Crea una nueva página en mi proyecto web con la URL exacta:
+
+/dolor-hombro-manguito-rotador-cuautitlan-izcalli
+
+Debe integrarse completamente con el diseño actual del sitio, utilizando el mismo header, footer, estilos, colores, tipografía y componentes existentes.
+
+OBJETIVO:
+
+Crear una página médica informativa orientada a pacientes sobre el dolor de hombro, enfocada especialmente en lesiones del manguito rotador, optimizada para SEO local en Cuautitlán Izcalli y conversión a consulta por WhatsApp.
+
+DOCTOR:
+
+Dr. Jorge Luis Córdova  
+Ortopedista especialista en hombro en Cuautitlán Izcalli
+
+---
+
+OPTIMIZACIÓN SEO:
+
+Title:
+Dolor de Hombro y Manguito Rotador en Cuautitlán Izcalli | Ortopedista Especialista
+
+Meta description:
+Tratamiento del dolor de hombro y lesiones del manguito rotador en Cuautitlán Izcalli. Conoce síntomas y cuándo acudir al ortopedista especialista.
+
+URL:
+ /dolor-hombro-manguito-rotador-cuautitlan-izcalli
+
+H1:
+Dolor de Hombro y Lesión del Manguito Rotador: síntomas y tratamiento
+
+---
+
+ESTRUCTURA DE LA PÁGINA:
+
+SECCIÓN 1 — Imagen principal y explicación general
+
+Agregar imagen médica profesional desde Unsplash:
+
+https://images.unsplash.com/photo-1576091160550-2173dba999ef
+
+Agregar texto en lenguaje sencillo explicando:
+
+Qué es el manguito rotador
+
+Cuál es su función
+
+Por qué se lesiona
+
+Por qué causa dolor
+
+Agregar botón visible:
+
+Texto:
+Agendar cita por WhatsApp
+
+Link:
+https://wa.me/521XXXXXXXXXX
+
+---
+
+SECCIÓN 2 — Síntomas del manguito rotador
+
+Lista clara:
+
+Dolor al levantar el brazo
+
+Dolor nocturno
+
+Debilidad
+
+Dolor al cargar objetos
+
+Limitación de movimiento
+
+Dolor progresivo
+
+Agregar imagen médica:
+
+https://images.unsplash.com/photo-1580281657527-47d97f3b7f0d
+
+---
+
+SECCIÓN 3 — Cuándo acudir con un especialista
+
+Explicar claramente:
+
+Dolor persistente
+
+Dolor que limita actividades
+
+Debilidad
+
+Dolor nocturno frecuente
+
+Lesión previa
+
+Agregar imagen médica profesional:
+
+https://images.unsplash.com/photo-1559757175-5700dde675bc
+
+---
+
+SECCIÓN 4 — Tratamientos disponibles
+
+Explicar en lenguaje sencillo:
+
+Medicamentos
+
+Terapia física
+
+Rehabilitación
+
+Infiltraciones
+
+Cirugía en casos necesarios
+
+Agregar imagen médica:
+
+https://images.unsplash.com/photo-1588776814546-daab30f310ce
+
+---
+
+SECCIÓN 5 — Especialista en hombro en Cuautitlán Izcalli
+
+Texto orientado a confianza del paciente:
+
+Valoración completa
+
+Diagnóstico preciso
+
+Tratamiento personalizado
+
+Especialista en hombro
+
+---
+
+SECCIÓN 6 — Botón final de conversión
+
+Botón grande centrado:
+
+AGENDAR CITA POR WHATSAPP
+
+Link:
+
+https://wa.me/521XXXXXXXXXX
+
+---
+
+REQUISITOS TÉCNICOS IMPORTANTES:
+
+La página debe:
+
+Ser completamente responsive
+
+Optimizada para SEO
+
+Usar correctamente etiquetas H1, H2, H3
+
+Agregar atributo ALT optimizado SEO en todas las imágenes
+
+Cargar rápido
+
+Mantener el diseño actual del sitio
+
+No modificar otras páginas
+
+Crear correctamente la ruta funcional
+
+---
+
+AGREGAR TAMBIÉN:
+
+Schema markup tipo MedicalWebPage
+
+Datos estructurados tipo Physician
+
+---
+
+IMPORTANTE:
+
+No modificar otras páginas existentes
+
+Solo crear esta nueva página completamente funcional e integrada al sitio

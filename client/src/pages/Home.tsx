@@ -122,7 +122,7 @@ export default function Home() {
               { title: "Lesión de meniscos", desc: "Atención especializada si sientes bloqueos en la rodilla, dolor agudo al rotar o inestabilidad.", icon: Bone, link: "/lesion-menisco-cuautitlan-izcalli" },
               { title: "Ligamento cruzado", desc: "Reconstrucción y tratamiento tras lesiones deportivas o accidentes que causan fallo en la rodilla.", icon: HeartPulse, link: "/ligamento-cruzado-anterior-cuautitlan-izcalli" },
               { title: "Desgaste articular (Artrosis)", desc: "Tratamientos para el desgaste del cartílago. Retrasamos el avance y aliviamos el dolor profundo.", icon: Stethoscope, link: "/artrosis-rodilla-cadera-cuautitlan-izcalli" },
-              { title: "Dolor de hombro", desc: "Alivio para dolor al levantar el brazo, manguito rotador, tendinitis y hombro congelado.", icon: UserCheck },
+              { title: "Dolor de hombro", desc: "Alivio para dolor al levantar el brazo, manguito rotador, tendinitis y hombro congelado.", icon: UserCheck, link: "/dolor-hombro-manguito-rotador-cuautitlan-izcalli" },
               { title: "Lesiones deportivas", desc: "Recuperación rápida y segura para que regreses a tu deporte favorito en tu máximo rendimiento.", icon: Award },
             ].map((item, idx) => {
               const cardContent = (
