@@ -147,15 +147,24 @@ export default function BlogAdmin() {
   });
 
   const createMutation = useMutation({
-    mutationFn: (data: InsertBlogPost) =>
-      fetch("/api/blog", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) })
-        .then(r => { if (!r.ok) throw r; return r.json(); }),
+    mutationFn: async (data: InsertBlogPost) => {
+      const res = await fetch("/api/blog", { 
+        method: "POST", 
+        headers: { "Content-Type": "application/json" }, 
+        body: JSON.stringify(data) 
+      });
+      if (!res.ok) {
+        const errBody = await res.json().catch(() => ({ message: `HTTP ${res.status}` }));
+        throw new Error(errBody.message || `Error ${res.status}`);
+      }
+      return res.json();
+    },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["/api/blog"] });
       setCreating(false);
       toast({ title: "Artículo creado exitosamente" });
     },
-    onError: () => toast({ title: "Error al crear artículo", variant: "destructive" }),
+    onError: (err: Error) => toast({ title: "Error al crear artículo", description: err.message, variant: "destructive" }),
   });
 
   const updateMutation = useMutation({
