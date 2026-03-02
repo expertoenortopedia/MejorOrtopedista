@@ -1,0 +1,174 @@
+Crea una nueva página en mi proyecto web con la URL exacta:
+
+/lesion-menisco-cuautitlan-izcalli
+
+Debe integrarse perfectamente a mi sitio actual, usando el mismo header, footer, tipografía, colores y estilos.
+
+OBJETIVO:
+Página médica informativa orientada a pacientes sobre lesión de menisco, optimizada para SEO local en Cuautitlán Izcalli y conversión a consulta por WhatsApp.
+
+DOCTOR:
+Dr. Jorge Luis Córdova
+Ortopedista especialista en rodilla en Cuautitlán Izcalli
+
+OPTIMIZACIÓN SEO:
+
+Title:
+Lesión de Menisco en Cuautitlán Izcalli | Especialista en Rodilla
+
+Meta description:
+Conoce los síntomas de la lesión de menisco, causas y cuándo acudir al especialista en rodilla en Cuautitlán Izcalli. Atención por el Dr Jorge Córdova.
+
+URL:
+ /lesion-menisco-cuautitlan-izcalli
+
+H1:
+Lesión de Menisco: síntomas, causas y tratamiento en Cuautitlán Izcalli
+
+---
+
+ESTRUCTURA DE CONTENIDO:
+
+SECCIÓN 1 — Imagen principal y explicación general
+
+Agregar imagen médica profesional desde Unsplash:
+
+https://images.unsplash.com/photo-1559757175-5700dde675bc
+
+Agregar texto en lenguaje sencillo explicando:
+
+Qué es el menisco
+
+Qué es una lesión de menisco
+
+Por qué ocurre
+
+Agregar botón visible:
+
+Texto botón:
+Agendar cita por WhatsApp
+
+Link:
+https://wa.me/521XXXXXXXXXX
+
+---
+
+SECCIÓN 2 — Síntomas de lesión de menisco
+
+Lista clara orientada a pacientes:
+
+Dolor en la rodilla
+
+Inflamación
+
+Sensación de bloqueo
+
+Dificultad para doblar la rodilla
+
+Dolor al caminar
+
+Sensación de inestabilidad
+
+Agregar imagen médica:
+
+https://images.unsplash.com/photo-1580281657527-47d97f3b7f0d
+
+---
+
+SECCIÓN 3 — Cuándo acudir al especialista en rodilla
+
+Explicar señales de alerta:
+
+Dolor persistente
+
+Inflamación recurrente
+
+Dificultad para caminar
+
+Lesión deportiva
+
+Sensación de rodilla atorada
+
+Agregar imagen profesional médica:
+
+https://images.unsplash.com/photo-1576091160399-112ba8d25d1d
+
+---
+
+SECCIÓN 4 — Tratamiento de la lesión de menisco
+
+Explicar en lenguaje sencillo:
+
+Medicamentos
+
+Terapia física
+
+Rehabilitación
+
+Cirugía artroscópica en casos necesarios
+
+Agregar imagen médica profesional:
+
+https://images.unsplash.com/photo-1588776814546-daab30f310ce
+
+---
+
+SECCIÓN 5 — Especialista en rodilla en Cuautitlán Izcalli
+
+Texto profesional orientado a confianza del paciente:
+
+Atención especializada
+
+Experiencia en lesiones de rodilla
+
+Tratamiento personalizado
+
+Evaluación completa
+
+---
+
+SECCIÓN 6 — Botón final de conversión
+
+Botón grande centrado:
+
+AGENDAR CITA POR WHATSAPP
+
+Link:
+
+https://wa.me/521XXXXXXXXXX
+
+---
+
+REQUISITOS TÉCNICOS IMPORTANTES:
+
+La página debe:
+
+Ser responsive
+
+Optimizada para SEO
+
+Usar etiquetas correctas H1 H2 H3
+
+Todas las imágenes deben tener ALT optimizado SEO
+
+Cargar rápido
+
+Mantener diseño del sitio actual
+
+No romper otras páginas
+
+Crear la ruta funcional correctamente
+
+---
+
+AGREGAR TAMBIÉN:
+
+Schema markup tipo MedicalWebPage
+
+---
+
+IMPORTANTE:
+
+No modificar otras páginas
+
+Solo crear esta nueva página completamente funcional e integrada al sitio
