@@ -137,10 +137,12 @@ export default function DolorDeRodilla() {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1597764699510-0b7c9c3d0a8c?w=800&q=80"
-                alt="Persona con dolor e inflamación en la rodilla necesitando atención ortopédica"
+                src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772493530/ChatGPT_Image_2_mar_2026_05_18_28_p.m._nmcsxx.png"
+                alt="Dolor de rodilla por desgaste de cartílago tratado con cirugía por ortopedista en Cuautitlán Izcalli"
+                title="Ortopedista en Cuautitlán Izcalli especialista en cirugía de rodilla y desgaste de cartílago"
                 className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
                 loading="lazy"
+                decoding="async"
                 data-testid="img-sintomas"
               />
             </div>
