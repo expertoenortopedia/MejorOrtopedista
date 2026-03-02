@@ -1,0 +1,192 @@
+Crea una nueva página en mi proyecto web con la URL exacta:
+
+/artrosis-rodilla-cadera-cuautitlan-izcalli
+
+Debe integrarse completamente con el diseño actual del sitio, usando el mismo header, footer, estilos, colores, tipografía y componentes.
+
+OBJETIVO:
+
+Crear una página médica informativa orientada a pacientes sobre el desgaste articular (artrosis), enfocada en rodilla y cadera, optimizada para SEO local en Cuautitlán Izcalli y conversión a consulta por WhatsApp.
+
+DOCTOR:
+
+Dr. Jorge Luis Córdova
+Ortopedista especialista en rodilla y cadera en Cuautitlán Izcalli
+
+---
+
+OPTIMIZACIÓN SEO:
+
+Title:
+Artrosis de Rodilla y Cadera en Cuautitlán Izcalli | Ortopedista Especialista
+
+Meta description:
+Tratamiento del desgaste articular de rodilla y cadera en Cuautitlán Izcalli. Conoce síntomas, causas y cuándo acudir al ortopedista especialista.
+
+URL:
+ /artrosis-rodilla-cadera-cuautitlan-izcalli
+
+H1:
+Desgaste Articular (Artrosis) de Rodilla y Cadera: síntomas y tratamiento
+
+---
+
+ESTRUCTURA DE LA PÁGINA:
+
+SECCIÓN 1 — Imagen principal y explicación general
+
+Agregar imagen médica profesional desde Unsplash:
+
+https://images.unsplash.com/photo-1576091160550-2173dba999ef
+
+Agregar texto en lenguaje claro nivel paciente explicando:
+
+Qué es el desgaste articular
+
+Por qué ocurre
+
+Por qué afecta rodilla y cadera con frecuencia
+
+Cómo progresa con el tiempo
+
+Agregar botón visible:
+
+Texto:
+Agendar cita por WhatsApp
+
+Link:
+https://wa.me/521XXXXXXXXXX
+
+---
+
+SECCIÓN 2 — Síntomas de desgaste articular en rodilla y cadera
+
+Lista clara:
+
+Dolor al caminar
+
+Dolor al levantarse
+
+Rigidez
+
+Inflamación
+
+Limitación de movimiento
+
+Dificultad para caminar
+
+Dolor en la ingle (cadera)
+
+Dolor en la rodilla al subir escaleras
+
+Agregar imagen médica:
+
+https://images.unsplash.com/photo-1559757175-5700dde675bc
+
+---
+
+SECCIÓN 3 — Cuándo acudir con un especialista
+
+Explicar claramente:
+
+Dolor persistente
+
+Limitación funcional
+
+Dolor progresivo
+
+Dificultad para actividades diarias
+
+Pérdida de calidad de vida
+
+Agregar imagen médica profesional:
+
+https://images.unsplash.com/photo-1580281657527-47d97f3b7f0d
+
+---
+
+SECCIÓN 4 — Tratamientos disponibles
+
+Explicar en lenguaje sencillo:
+
+Medicamentos
+
+Terapia física
+
+Infiltraciones
+
+Cambios en estilo de vida
+
+Cirugía en casos avanzados
+
+Prótesis de rodilla
+
+Prótesis de cadera
+
+Agregar imagen médica:
+
+https://images.unsplash.com/photo-1588776814546-daab30f310ce
+
+---
+
+SECCIÓN 5 — Especialista en rodilla y cadera en Cuautitlán Izcalli
+
+Texto orientado a confianza del paciente:
+
+Valoración completa
+
+Diagnóstico preciso
+
+Tratamiento personalizado
+
+Especialista en enfermedades articulares
+
+---
+
+SECCIÓN 6 — Botón final de conversión
+
+Botón grande centrado:
+
+AGENDAR CITA POR WHATSAPP
+
+Link:
+
+https://wa.me/521XXXXXXXXXX
+
+---
+
+REQUISITOS TÉCNICOS:
+
+La página debe:
+
+Ser completamente responsive
+
+Optimizada para SEO
+
+Usar correctamente etiquetas H1 H2 H3
+
+Agregar atributo ALT optimizado SEO en imágenes
+
+Cargar rápido
+
+Mantener el diseño actual
+
+No modificar otras páginas
+
+Crear correctamente la ruta funcional
+
+---
+
+AGREGAR TAMBIÉN:
+
+Schema markup tipo MedicalWebPage
+
+Agregar datos estructurados tipo Physician
+
+---
+
+IMPORTANTE:
+
+No modificar otras páginas
+
+Solo crear esta nueva página completa e integrada al sitio
