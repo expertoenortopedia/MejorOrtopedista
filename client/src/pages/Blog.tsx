@@ -5,10 +5,18 @@ import { Calendar, ArrowRight, BookOpen } from "lucide-react";
 import { Link } from "wouter";
 import type { BlogPost } from "@shared/schema";
 
+async function fetchBlogList(): Promise<BlogPost[]> {
+  const staticRes = await fetch("/api/blog.json");
+  if (staticRes.ok) return staticRes.json();
+  const apiRes = await fetch("/api/blog");
+  if (apiRes.ok) return apiRes.json();
+  return [];
+}
+
 export default function Blog() {
   const { data: posts, isLoading } = useQuery<BlogPost[]>({
     queryKey: ["/api/blog"],
-    queryFn: () => fetch("/api/blog").then(r => r.json()),
+    queryFn: fetchBlogList,
   });
 
   return (

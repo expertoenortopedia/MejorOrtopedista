@@ -10,10 +10,13 @@ export default function BlogPost() {
 
   const { data: post, isLoading, error } = useQuery<BlogPostType>({
     queryKey: ["/api/blog", slug],
-    queryFn: () => fetch(`/api/blog/${slug}`).then(r => {
-      if (!r.ok) throw new Error("No encontrado");
-      return r.json();
-    }),
+    queryFn: async () => {
+      const staticRes = await fetch(`/api/blog/${slug}.json`);
+      if (staticRes.ok) return staticRes.json();
+      const apiRes = await fetch(`/api/blog/${slug}`);
+      if (apiRes.ok) return apiRes.json();
+      throw new Error("No encontrado");
+    },
   });
 
   const WHATSAPP_LINK = "https://wa.me/525514961386?text=Hola%20Dr.%20Jorge,%20vengo%20de%20su%20blog%20y%20me%20gustar%C3%ADa%20agendar%20una%20cita.";
