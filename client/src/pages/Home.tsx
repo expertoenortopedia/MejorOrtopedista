@@ -73,7 +73,7 @@ export default function Home() {
             <div className="relative animate-in fade-in slide-in-from-right-8 duration-1000 delay-200 hidden md:block">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-[2rem] -rotate-3 scale-105" />
               <img 
-                src={heroImg} 
+                src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772415646/ChatGPT_Image_1_mar_2026_07_40_32_p.m._ygzejw.png"
                 alt="Doctor examinando rodilla de paciente" 
                 className="relative rounded-[2rem] shadow-2xl object-cover aspect-[4/3] w-full"
               />
