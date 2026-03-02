@@ -12,12 +12,14 @@ import Blog from "@/pages/Blog";
 import BlogPost from "@/pages/BlogPost";
 import BlogAdmin from "@/pages/BlogAdmin";
 import DolorDeRodilla from "@/pages/DolorDeRodilla";
+import LesionMenisco from "@/pages/LesionMenisco";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/dolor-de-rodilla-cuautitlan-izcalli" component={DolorDeRodilla} />
+      <Route path="/lesion-menisco-cuautitlan-izcalli" component={LesionMenisco} />
       <Route path="/marketing" component={Marketing} />
       <Route path="/admin/blog" component={BlogAdmin} />
       <Route path="/blog-admin" component={BlogAdmin} />

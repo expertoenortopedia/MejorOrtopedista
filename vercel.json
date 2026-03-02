@@ -11,6 +11,10 @@
       "destination": "/index.html"
     },
     {
+      "source": "/lesion-menisco-cuautitlan-izcalli",
+      "destination": "/index.html"
+    },
+    {
       "source": "/blog",
       "destination": "/index.html"
     },
