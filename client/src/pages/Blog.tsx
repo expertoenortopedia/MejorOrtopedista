@@ -7,7 +7,10 @@ import type { BlogPost } from "@shared/schema";
 
 async function fetchBlogList(): Promise<BlogPost[]> {
   const staticRes = await fetch("/api/blog.json");
-  if (staticRes.ok) return staticRes.json();
+  if (staticRes.ok) {
+    const contentType = staticRes.headers.get("content-type") || "";
+    if (contentType.includes("application/json")) return staticRes.json();
+  }
   const apiRes = await fetch("/api/blog");
   if (apiRes.ok) return apiRes.json();
   return [];

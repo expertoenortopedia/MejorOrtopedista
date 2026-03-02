@@ -12,7 +12,10 @@ export default function BlogPost() {
     queryKey: ["/api/blog", slug],
     queryFn: async () => {
       const staticRes = await fetch(`/api/blog/${slug}.json`);
-      if (staticRes.ok) return staticRes.json();
+      if (staticRes.ok) {
+        const contentType = staticRes.headers.get("content-type") || "";
+        if (contentType.includes("application/json")) return staticRes.json();
+      }
       const apiRes = await fetch(`/api/blog/${slug}`);
       if (apiRes.ok) return apiRes.json();
       throw new Error("No encontrado");
