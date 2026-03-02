@@ -1,0 +1,212 @@
+Crea una nueva página en mi proyecto web con la URL exacta:
+
+/lesiones-deportivas-cuautitlan-izcalli
+
+Debe integrarse completamente con el diseño actual del sitio, utilizando el mismo header, footer, estilos, colores, tipografía y componentes.
+
+OBJETIVO:
+
+Crear una página médica informativa orientada a pacientes sobre lesiones deportivas, optimizada para SEO local en Cuautitlán Izcalli y conversión a consulta por WhatsApp.
+
+DOCTOR:
+
+Dr. Jorge Luis Córdova  
+Ortopedista especialista en lesiones deportivas en Cuautitlán Izcalli
+
+---
+
+OPTIMIZACIÓN SEO:
+
+Title:
+Lesiones Deportivas en Cuautitlán Izcalli | Ortopedista Especialista
+
+Meta description:
+Tratamiento de lesiones deportivas en Cuautitlán Izcalli. Conoce las lesiones más comunes, síntomas y cuándo acudir al ortopedista especialista.
+
+URL:
+ /lesiones-deportivas-cuautitlan-izcalli
+
+H1:
+Lesiones Deportivas: síntomas, tratamiento y atención especializada
+
+---
+
+ESTRUCTURA DE CONTENIDO:
+
+SECCIÓN 1 — Imagen principal y explicación general
+
+Agregar imagen médica profesional desde Unsplash:
+
+https://images.unsplash.com/photo-1517836357463-d25dfeac3438
+
+Agregar texto en lenguaje claro nivel paciente explicando:
+
+Qué son las lesiones deportivas
+
+Por qué ocurren
+
+Quiénes pueden presentarlas
+
+Importancia de diagnóstico oportuno
+
+Agregar botón visible:
+
+Texto:
+Agendar cita por WhatsApp
+
+Link:
+https://wa.me/521XXXXXXXXXX
+
+---
+
+SECCIÓN 2 — Lesiones deportivas más comunes
+
+Explicar brevemente cada una:
+
+Lesión de ligamento cruzado anterior
+
+Lesión de menisco
+
+Esguince de tobillo
+
+Desgarro muscular
+
+Lesión del manguito rotador
+
+Tendinitis
+
+Agregar imagen médica:
+
+https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b
+
+---
+
+SECCIÓN 3 — Síntomas frecuentes
+
+Lista clara:
+
+Dolor
+
+Inflamación
+
+Limitación de movimiento
+
+Debilidad
+
+Inestabilidad
+
+Dificultad para realizar actividad física
+
+Agregar imagen médica:
+
+https://images.unsplash.com/photo-1580281657527-47d97f3b7f0d
+
+---
+
+SECCIÓN 4 — Cuándo acudir con un ortopedista
+
+Explicar claramente:
+
+Dolor persistente
+
+Inflamación
+
+Dificultad para caminar
+
+Lesión durante el deporte
+
+Limitación funcional
+
+Dolor que no mejora
+
+Agregar imagen médica:
+
+https://images.unsplash.com/photo-1576091160550-2173dba999ef
+
+---
+
+SECCIÓN 5 — Tratamiento especializado
+
+Explicar en lenguaje sencillo:
+
+Medicamentos
+
+Terapia física
+
+Rehabilitación
+
+Tratamiento personalizado
+
+Cirugía en casos necesarios
+
+INCLUIR ESTA FRASE EXACTA EN ESTA SECCIÓN:
+
+"Trabajamos con rehabilitadores profesionales para lograr una recuperación segura, completa y un regreso adecuado a las actividades deportivas."
+
+Agregar imagen médica:
+
+https://images.unsplash.com/photo-1588776814546-daab30f310ce
+
+---
+
+SECCIÓN 6 — Especialista en lesiones deportivas en Cuautitlán Izcalli
+
+Texto orientado a confianza:
+
+Valoración completa
+
+Diagnóstico preciso
+
+Tratamiento personalizado
+
+Experiencia en lesiones deportivas
+
+---
+
+SECCIÓN 7 — Botón final de conversión
+
+Botón grande centrado:
+
+AGENDAR CITA POR WHATSAPP
+
+Link:
+
+https://wa.me/521XXXXXXXXXX
+
+---
+
+REQUISITOS TÉCNICOS:
+
+La página debe:
+
+Ser completamente responsive
+
+Optimizada para SEO
+
+Usar etiquetas H1 H2 H3 correctamente
+
+Agregar atributo ALT optimizado SEO en imágenes
+
+Cargar rápido
+
+Mantener diseño actual del sitio
+
+No modificar otras páginas
+
+Crear la ruta funcional correctamente
+
+---
+
+AGREGAR TAMBIÉN:
+
+Schema markup tipo MedicalWebPage
+
+Datos estructurados tipo Physician
+
+---
+
+IMPORTANTE:
+
+No modificar otras páginas existentes
+
+Solo crear esta nueva página completamente funcional e integrada al sitio

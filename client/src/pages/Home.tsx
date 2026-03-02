@@ -123,7 +123,7 @@ export default function Home() {
               { title: "Ligamento cruzado", desc: "Reconstrucción y tratamiento tras lesiones deportivas o accidentes que causan fallo en la rodilla.", icon: HeartPulse, link: "/ligamento-cruzado-anterior-cuautitlan-izcalli" },
               { title: "Desgaste articular (Artrosis)", desc: "Tratamientos para el desgaste del cartílago. Retrasamos el avance y aliviamos el dolor profundo.", icon: Stethoscope, link: "/artrosis-rodilla-cadera-cuautitlan-izcalli" },
               { title: "Dolor de hombro", desc: "Alivio para dolor al levantar el brazo, manguito rotador, tendinitis y hombro congelado.", icon: UserCheck, link: "/dolor-hombro-manguito-rotador-cuautitlan-izcalli" },
-              { title: "Lesiones deportivas", desc: "Recuperación rápida y segura para que regreses a tu deporte favorito en tu máximo rendimiento.", icon: Award },
+              { title: "Lesiones deportivas", desc: "Recuperación rápida y segura para que regreses a tu deporte favorito en tu máximo rendimiento.", icon: Award, link: "/lesiones-deportivas-cuautitlan-izcalli" },
             ].map((item, idx) => {
               const cardContent = (
                 <Card key={idx} className={`border border-slate-100 hover:border-primary/20 shadow-sm hover:shadow-md transition-all group overflow-hidden ${item.link ? "cursor-pointer" : ""}`} data-testid={`card-specialty-${idx}`}>

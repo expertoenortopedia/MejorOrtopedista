@@ -27,6 +27,10 @@
       "destination": "/index.html"
     },
     {
+      "source": "/lesiones-deportivas-cuautitlan-izcalli",
+      "destination": "/index.html"
+    },
+    {
       "source": "/blog",
       "destination": "/index.html"
     },
