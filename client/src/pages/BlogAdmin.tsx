@@ -11,7 +11,7 @@ import { Pencil, Trash2, Plus, Eye, EyeOff, Lock, LogIn } from "lucide-react";
 import { useState } from "react";
 import type { BlogPost, InsertBlogPost } from "@shared/schema";
 
-const ADMIN_PASSWORD = "drcordova2025";
+const ADMIN_PASSWORD = "5674323";
 
 function slugify(text: string): string {
   return text
