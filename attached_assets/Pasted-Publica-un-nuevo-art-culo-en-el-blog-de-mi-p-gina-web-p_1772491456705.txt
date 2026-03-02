@@ -1,0 +1,81 @@
+Publica un nuevo artículo en el blog de mi página web (proyecto Vite + React) enfocado en patología de rodilla.
+
+OBJETIVO:
+Artículo médico dirigido a pacientes sobre lesión del ligamento cruzado anterior (LCA), cuándo sospecharla, indicaciones quirúrgicas y técnicas actuales de reconstrucción.
+
+CONFIGURACIÓN SEO:
+
+SLUG:
+/blog/lesion-ligamento-cruzado-anterior
+
+TITLE SEO:
+Lesión de ligamento cruzado anterior: cuándo operar y técnicas actuales de reconstrucción
+
+META DESCRIPTION:
+Conoce cómo identificar una lesión del ligamento cruzado anterior, cuándo se recomienda cirugía y cuáles son las técnicas modernas de reconstrucción.
+
+KEYWORDS:
+lesión ligamento cruzado anterior
+cirugía LCA
+reconstrucción ligamento cruzado
+ortopedista especialista en rodilla
+inestabilidad de rodilla
+
+AUTOR:
+Dr. George [APELLIDO]
+
+CATEGORÍA:
+Rodilla
+
+IMAGEN PRINCIPAL:
+/images/lesion-ligamento-cruzado-rodilla.webp
+
+ALT IMAGEN:
+Lesión del ligamento cruzado anterior en rodilla
+
+ESTRUCTURA DEL CONTENIDO (obligatoria):
+
+1. Introducción
+   Explicar qué es el ligamento cruzado anterior y su función en la estabilidad de la rodilla.
+
+2. ¿Cómo ocurre la lesión?
+
+* Deportes de pivote
+* Cambios bruscos de dirección
+* Traumatismo en valgo
+* Sensación de "trueno" o chasquido
+
+3. ¿Cuándo sospechar una lesión de LCA?
+
+* Inflamación inmediata
+* Derrame articular
+* Sensación de inestabilidad
+* Falla al girar o descender escaleras
+* Episodios repetidos de falseo
+
+4. Diagnóstico
+
+* Exploración clínica (Lachman, cajón anterior, pivot shift)
+* Resonancia magnética
+* Importancia de valoración por especialista
+
+5. ¿Siempre se debe operar?
+   Explicar manejo individualizado:
+
+* Paciente sedentario vs deportista
+* Grado de inestabilidad
+* Lesiones asociadas (menisco, cartílago)
+* Riesgo de daño secundario
+
+6. ¿Por qué se recomienda cirugía en pacientes activos?
+
+* Prevención de daño meniscal
+* Prevención de artrosis temprana
+* Restauración de estabilidad funcional
+* Retorno seguro al deporte
+
+7. Técnicas actuales más avanzadas de reconstrucción:
+   Describir de forma comprensible:
+
+* Reconstrucción anatómica artroscópica
+* Injerto autólogo (isquiotibiales, hueso
