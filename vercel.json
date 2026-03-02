@@ -3,15 +3,7 @@
   "outputDirectory": "dist/public",
   "rewrites": [
     {
-      "source": "/blog/(.*)",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/admin/(.*)",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/marketing",
+      "source": "/((?!api/).*)",
       "destination": "/index.html"
     }
   ]
