@@ -8,12 +8,18 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import Marketing from "@/pages/Marketing";
+import Blog from "@/pages/Blog";
+import BlogPost from "@/pages/BlogPost";
+import BlogAdmin from "@/pages/BlogAdmin";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/marketing" component={Marketing} />
+      <Route path="/blog" component={Blog} />
+      <Route path="/blog/:slug" component={BlogPost} />
+      <Route path="/admin/blog" component={BlogAdmin} />
       <Route component={NotFound} />
     </Switch>
   );

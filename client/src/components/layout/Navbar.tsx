@@ -12,6 +12,7 @@ export function Navbar() {
     { name: "Tratamientos", href: "#tratamientos", type: "anchor" },
     { name: "Testimonios", href: "#testimonios", type: "anchor" },
     { name: "El Doctor", href: "#doctor", type: "anchor" },
+    { name: "Blog", href: "/blog", type: "route" },
   ];
 
   const handleNav = (link: typeof navLinks[0]) => {

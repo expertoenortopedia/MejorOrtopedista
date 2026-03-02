@@ -1,17 +1,26 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
-  Activity, ArrowRight, Award, Bone, CheckCircle2, 
-  ChevronRight, HeartPulse, ShieldCheck, 
+  Activity, ArrowRight, Award, Bone, BookOpen, CheckCircle2, 
+  Calendar, ChevronRight, HeartPulse, ShieldCheck, 
   Star, Stethoscope, UserCheck 
 } from "lucide-react";
 import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
+import { useQuery } from "@tanstack/react-query";
+import { Link } from "wouter";
+import type { BlogPost } from "@shared/schema";
 import heroImg from "@/assets/images/hero-medical.png";
 import doctorImg from "@/assets/images/doctor-portrait.png";
 import clinicImg from "@/assets/images/clinic-interior.png";
 
 export default function Home() {
   const WHATSAPP_LINK = "https://wa.me/525514961386?text=Hola%20Dr.%20Jorge,%20vengo%20de%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20agendar%20una%20cita.";
+
+  const { data: blogPosts } = useQuery<BlogPost[]>({
+    queryKey: ["/api/blog"],
+    queryFn: () => fetch("/api/blog").then(r => r.json()),
+  });
+  const recentPosts = blogPosts?.slice(0, 3) ?? [];
 
   return (
     <div className="w-full bg-background overflow-hidden">
@@ -319,7 +328,66 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. CALL TO ACTION FINAL */}
+      {/* 6. BLOG MÉDICO */}
+      <section id="blog" className="py-24 bg-white">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-4">
+              <BookOpen className="w-4 h-4" />
+              Blog Médico
+            </div>
+            <h3 className="font-serif text-3xl md:text-4xl font-bold mb-6">Artículos y Actualizaciones</h3>
+            <p className="text-lg text-muted-foreground">
+              Información confiable sobre ortopedia, prevención de lesiones y tratamientos, escrita por el Dr. Jorge Luis Córdova.
+            </p>
+          </div>
+
+          {recentPosts.length > 0 ? (
+            <>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {recentPosts.map((post) => (
+                  <Link key={post.id} href={`/blog/${post.slug}`}>
+                    <Card className="overflow-hidden cursor-pointer group hover:shadow-lg transition-all border-slate-100 hover:border-primary/20 h-full">
+                      {post.imageUrl && (
+                        <div className="h-48 overflow-hidden">
+                          <img
+                            src={post.imageUrl}
+                            alt={post.title}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          />
+                        </div>
+                      )}
+                      <CardContent className="p-6">
+                        <div className="flex items-center gap-2 text-xs text-muted-foreground mb-3">
+                          <Calendar className="w-3 h-3" />
+                          {new Date(post.createdAt).toLocaleDateString("es-MX", { year: "numeric", month: "long", day: "numeric" })}
+                        </div>
+                        <h4 className="font-bold text-lg mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                          {post.title}
+                        </h4>
+                        <p className="text-muted-foreground text-sm line-clamp-3">{post.summary}</p>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                ))}
+              </div>
+              <div className="mt-10 text-center">
+                <Link href="/blog">
+                  <Button variant="outline" className="rounded-full px-8 py-5 text-base gap-2 border-2">
+                    Ver todos los artículos <ArrowRight className="w-4 h-4" />
+                  </Button>
+                </Link>
+              </div>
+            </>
+          ) : (
+            <div className="text-center py-8">
+              <p className="text-muted-foreground">Próximamente publicaremos artículos de interés médico.</p>
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* 7. CALL TO ACTION FINAL */}
       <section className="py-24 bg-primary text-white">
         <div className="container mx-auto px-4 md:px-6 text-center max-w-4xl">
           <h2 className="font-serif text-3xl md:text-5xl font-bold mb-8">Da el primer paso hacia una vida sin dolor</h2>
