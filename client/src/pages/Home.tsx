@@ -2,9 +2,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
   Activity, ArrowRight, Award, Bone, CheckCircle2, 
-  ChevronRight, HeartPulse, MessageCircle, ShieldCheck, 
-  Star, Stethoscope, UserCheck, Phone 
+  ChevronRight, HeartPulse, ShieldCheck, 
+  Star, Stethoscope, UserCheck 
 } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import heroImg from "@/assets/images/hero-medical.png";
 import doctorImg from "@/assets/images/doctor-portrait.png";
 import clinicImg from "@/assets/images/clinic-interior.png";
@@ -40,7 +41,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                   <Button size="lg" className="w-full text-base h-14 bg-green-600 hover:bg-green-700 text-white shadow-lg shadow-green-600/30 rounded-xl gap-2 transition-transform hover:-translate-y-1">
-                    <MessageCircle className="w-5 h-5" />
+                    <WhatsAppIcon className="w-6 h-6" />
                     Agendar cita por WhatsApp
                   </Button>
                 </a>
@@ -133,6 +134,7 @@ export default function Home() {
             <p className="text-muted-foreground mb-6">¿Te identificas con alguno de estos síntomas?</p>
             <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
               <Button className="bg-primary hover:bg-primary/90 text-white rounded-full px-8 py-6 text-lg shadow-lg hover:-translate-y-1 transition-transform">
+                <WhatsAppIcon className="w-6 h-6 mr-2" />
                 Cuéntame tus síntomas por WhatsApp
               </Button>
             </a>
@@ -327,7 +329,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="h-16 px-8 text-lg bg-green-500 hover:bg-green-600 text-white rounded-xl shadow-2xl gap-3">
-                <Phone className="w-6 h-6" />
+                <WhatsAppIcon className="w-7 h-7" />
                 Agendar por WhatsApp
               </Button>
             </a>

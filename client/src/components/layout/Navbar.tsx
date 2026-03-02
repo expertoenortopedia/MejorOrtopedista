@@ -1,6 +1,7 @@
 import { Link, useLocation } from "wouter";
-import { Phone, Stethoscope, Menu, X } from "lucide-react";
+import { Stethoscope, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -67,7 +68,7 @@ export function Navbar() {
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all shadow-md shadow-green-600/20 hover:shadow-lg hover:shadow-green-600/30 hover:-translate-y-0.5 no-underline"
             >
-              <Phone className="h-4 w-4" />
+              <WhatsAppIcon className="h-5 w-5" />
               Agendar Cita
             </a>
           </div>
@@ -102,7 +103,7 @@ export function Navbar() {
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 bg-green-600 text-white px-5 py-3 rounded-xl text-base font-semibold w-full no-underline"
             >
-              <Phone className="h-5 w-5" />
+              <WhatsAppIcon className="h-6 w-6" />
               Agendar Cita por WhatsApp
             </a>
           </div>
