@@ -274,13 +274,22 @@ export default function LesionesDeportivas() {
               ))}
             </div>
             <div className="space-y-6">
-              <img
-                src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?w=800&q=80"
-                alt="Rehabilitación y tratamiento de lesiones deportivas por especialista"
-                className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
-                loading="lazy"
-                data-testid="img-tratamientos-deportivas"
-              />
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772562204/ChatGPT_Image_4_mar_2026_12_24_09_p.m._mfyjqy.png"
+                  alt="Ortopedista evaluando rodilla de deportista en consulta médica especializada en lesiones deportivas en Cuautitlán Izcalli"
+                  title="Evaluación de dolor de rodilla en deportista | Ortopedista en Cuautitlán Izcalli"
+                  width={1200}
+                  height={900}
+                  className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
+                  loading="lazy"
+                  decoding="async"
+                  data-testid="img-tratamientos-deportivas"
+                />
+                <figcaption className="text-xs text-muted-foreground mt-2 text-center italic">
+                  ¿Dolor de rodilla al hacer deporte? Una valoración ortopédica oportuna permite un diagnóstico preciso y un plan de tratamiento personalizado
+                </figcaption>
+              </figure>
               <div className="bg-primary/5 border border-primary/10 rounded-xl p-6">
                 <p className="text-slate-700 text-base leading-relaxed italic">
                   "Trabajamos con rehabilitadores profesionales para lograr una recuperación segura, completa y un regreso adecuado a las actividades deportivas."
