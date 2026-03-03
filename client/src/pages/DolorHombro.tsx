@@ -172,13 +172,22 @@ export default function DolorHombro() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <img
-                src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&q=80"
-                alt="Diagnóstico de dolor de hombro por especialista en Cuautitlán Izcalli"
-                className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
-                loading="lazy"
-                data-testid="img-alertas-hombro"
-              />
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772559314/ChatGPT_Image_4_mar_2026_11_35_47_a.m._ukr5vs.png"
+                  alt="Ortopedista realizando infiltración de hombro guiada por ultrasonido para tratamiento de dolor y lesión del manguito rotador en consultorio"
+                  title="Infiltración de hombro guiada por ultrasonido en CDMX | Especialista en Ortopedia"
+                  width={1200}
+                  height={900}
+                  className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
+                  loading="lazy"
+                  decoding="async"
+                  data-testid="img-alertas-hombro"
+                />
+                <figcaption className="text-xs text-muted-foreground mt-2 text-center italic">
+                  Alivio preciso del dolor de hombro con infiltración guiada por ultrasonido. Mayor exactitud, menor riesgo y recuperación más rápida
+                </figcaption>
+              </figure>
             </div>
             <div className="order-1 lg:order-2">
               <h2 className="font-serif text-2xl md:text-3xl font-bold mb-4 text-slate-900">
