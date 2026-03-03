@@ -403,7 +403,7 @@ export default function Home() {
                 {[
                   { name: "Grupo Star Médica", desc: "Hospital Star Médica Luna Parc, Cuautitlán Izcalli", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502693/starmedica_nyt3zu.png" },
                   { name: "Grupo Ángeles", desc: "Red de hospitales de alta especialidad", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502681/angeles_f3gu5j.jpg" },
-                  { name: "Grupo San Ángel Inn", desc: "Atención médica de calidad y calidez", logo: "" },
+                  { name: "Grupo San Ángel Inn", desc: "Atención médica de calidad y calidez", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502690/sanangelin_qnykgb.jpg" },
                 ].map((hospital) => (
                   <div key={hospital.name} className="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 transition-colors" data-testid={`text-hospital-${hospital.name.toLowerCase().replace(/\s/g, '-')}`}>
                     {hospital.logo ? (
