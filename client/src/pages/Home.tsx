@@ -128,23 +128,25 @@ export default function Home() {
             ].map((item, idx) => {
               const cardContent = (
                 <Card key={idx} className={`border border-slate-100 hover:border-primary/20 shadow-sm hover:shadow-md transition-all group overflow-hidden ${item.link ? "cursor-pointer" : ""}`} data-testid={`card-specialty-${idx}`}>
-                  <CardContent className="p-8">
-                    <div className="mb-6 bg-slate-50 group-hover:bg-primary/5 rounded-2xl w-24 h-24 mx-auto flex items-center justify-center transition-colors overflow-hidden">
+                  <CardContent className="p-6 flex items-start gap-5">
+                    <div className="bg-slate-50 group-hover:bg-primary/5 rounded-2xl w-20 h-20 flex-shrink-0 flex items-center justify-center transition-colors overflow-hidden">
                       {item.img ? (
                         <img src={item.img} alt={item.title} className="w-full h-full object-contain rounded-xl" loading="lazy" decoding="async" />
                       ) : (
                         <item.icon className="w-8 h-8 text-primary group-hover:scale-110 transition-transform" />
                       )}
                     </div>
-                    <h4 className="text-xl font-bold mb-3">{item.title}</h4>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {item.desc}
-                    </p>
-                    {item.link && (
-                      <span className="inline-flex items-center text-primary text-sm font-medium mt-3 group-hover:translate-x-1 transition-transform">
-                        Más información <ChevronRight className="w-4 h-4 ml-1" />
-                      </span>
-                    )}
+                    <div className="flex-1 min-w-0">
+                      <h4 className="text-xl font-bold mb-2">{item.title}</h4>
+                      <p className="text-muted-foreground leading-relaxed text-sm">
+                        {item.desc}
+                      </p>
+                      {item.link && (
+                        <span className="inline-flex items-center text-primary text-sm font-medium mt-2 group-hover:translate-x-1 transition-transform">
+                          Más información <ChevronRight className="w-4 h-4 ml-1" />
+                        </span>
+                      )}
+                    </div>
                   </CardContent>
                 </Card>
               );
