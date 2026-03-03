@@ -146,13 +146,22 @@ export default function DolorHombro() {
               </div>
             </div>
             <div>
-              <img
-                src="https://images.unsplash.com/photo-1580281657527-47d97f3b7f0d?w=800&q=80"
-                alt="Paciente con dolor de hombro por lesión del manguito rotador"
-                className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
-                loading="lazy"
-                data-testid="img-sintomas-hombro"
-              />
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772559209/ChatGPT_Image_4_mar_2026_11_34_13_a.m._ach5nt.png"
+                  alt="Síntomas de lesión del manguito rotador y dolor de hombro diagnosticados por ortopedista especialista en Cuautitlán Izcalli"
+                  title="Síntomas de dolor de hombro y manguito rotador - Ortopedista en Cuautitlán Izcalli"
+                  width={800}
+                  height={600}
+                  className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
+                  loading="lazy"
+                  decoding="async"
+                  data-testid="img-sintomas-hombro"
+                />
+                <figcaption className="text-xs text-muted-foreground mt-2 text-center italic">
+                  Diagnóstico especializado de lesiones del manguito rotador y dolor de hombro
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
