@@ -156,13 +156,22 @@ export default function LigamentoCruzado() {
               </div>
             </div>
             <div>
-              <img
-                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80"
-                alt="Evaluación de síntomas de lesión de ligamento cruzado anterior por ortopedista"
-                className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
-                loading="lazy"
-                data-testid="img-sintomas-lca"
-              />
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772562537/ChatGPT_Image_4_mar_2026_12_29_50_p.m._ex2obt.png"
+                  alt="Futbolista con lesión del ligamento cruzado anterior en la rodilla durante partido mostrando dolor agudo tras mecanismo de torsión"
+                  title="Lesión de Ligamento Cruzado Anterior en Futbolista | Ortopedista Deportivo en Estado de México"
+                  width={1200}
+                  height={900}
+                  className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
+                  loading="lazy"
+                  decoding="async"
+                  data-testid="img-sintomas-lca"
+                />
+                <figcaption className="text-xs text-muted-foreground mt-2 text-center italic">
+                  ¿Dolor intenso en la rodilla después de un giro o cambio brusco de dirección? La valoración temprana mejora el pronóstico y el retorno al deporte
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
