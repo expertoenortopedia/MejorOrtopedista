@@ -100,13 +100,22 @@ export default function DolorHombro() {
               </a>
             </div>
             <div className="relative">
-              <img
-                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80"
-                alt="Consulta ortopédica especializada en dolor de hombro y manguito rotador"
-                className="rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]"
-                loading="eager"
-                data-testid="img-hero-hombro"
-              />
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772559093/ChatGPT_Image_4_mar_2026_11_32_08_a.m._nqycfl.png"
+                  alt="Dolor de hombro y lesión del manguito rotador evaluado por ortopedista especialista en Cuautitlán Izcalli"
+                  title="Dolor de hombro y lesión de manguito rotador - Ortopedista en Cuautitlán Izcalli"
+                  width={800}
+                  height={600}
+                  className="rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]"
+                  loading="eager"
+                  decoding="async"
+                  data-testid="img-hero-hombro"
+                />
+                <figcaption className="text-xs text-muted-foreground mt-2 text-center italic">
+                  Especialista en dolor de hombro y lesiones del manguito rotador en Cuautitlán Izcalli
+                </figcaption>
+              </figure>
               <div className="absolute -bottom-4 -left-4 bg-white rounded-xl shadow-lg p-4 hidden md:block">
                 <p className="text-sm font-bold text-primary">+25 años</p>
                 <p className="text-xs text-muted-foreground">de experiencia</p>
