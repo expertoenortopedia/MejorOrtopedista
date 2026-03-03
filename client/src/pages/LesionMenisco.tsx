@@ -210,10 +210,12 @@ export default function LesionMenisco() {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?w=800&q=80"
-                alt="Tratamiento y rehabilitación de lesión de menisco por ortopedista"
+                src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772555537/ChatGPT_Image_4_mar_2026_10_16_49_a.m._1_fnmjd0.png"
+                alt="Artroscopia de rodilla para tratamiento de lesión de menisco en Cuautitlán Izcalli"
+                title="Cirugía artroscópica de menisco - Ortopedista especialista en rodilla"
                 className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
                 loading="lazy"
+                decoding="async"
                 data-testid="img-tratamientos-menisco"
               />
             </div>
