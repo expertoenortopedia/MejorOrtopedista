@@ -371,7 +371,7 @@ export default function Home() {
                 {[
                   { name: "GNP", logo: "" },
                   { name: "AXA", logo: "" },
-                  { name: "Metlife", logo: "" },
+                  { name: "Metlife", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502689/metlife_dc83pp.png" },
                   { name: "Allianz", logo: "" },
                   { name: "Zurich", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502694/zurich_oalh8v.png" },
                   { name: "BUPA", logo: "" },
