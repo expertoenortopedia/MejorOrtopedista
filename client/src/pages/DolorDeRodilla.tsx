@@ -215,10 +215,12 @@ export default function DolorDeRodilla() {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1580281657527-47d97f3b7f0d?w=800&q=80"
-                alt="Tratamiento médico profesional para dolor de rodilla con infiltración"
+                src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772501060/ChatGPT_Image_2_mar_2026_07_23_45_p.m._el9k5x.png"
+                alt="Tratamiento para dolor de rodilla por desgaste articular con cirugía especializada en Cuautitlán Izcalli"
+                title="Tratamientos disponibles para dolor de rodilla - Ortopedista especialista en Cuautitlán Izcalli"
                 className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
                 loading="lazy"
+                decoding="async"
                 data-testid="img-tratamientos"
               />
             </div>
