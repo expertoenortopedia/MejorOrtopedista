@@ -1,29 +1,11 @@
-import { useQuery } from "@tanstack/react-query";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight, BookOpen } from "lucide-react";
 import { Link } from "wouter";
-import type { BlogPost } from "@shared/schema";
-
-async function fetchBlogList(): Promise<BlogPost[]> {
-  const urls = ["/api/blog.json", "/api/blog"];
-  for (const url of urls) {
-    try {
-      const res = await fetch(url);
-      if (res.ok) {
-        const ct = res.headers.get("content-type") || "";
-        if (ct.includes("json")) return res.json();
-      }
-    } catch {}
-  }
-  return [];
-}
+import { blogPostsList } from "@/data/blogPosts";
 
 export default function Blog() {
-  const { data: posts, isLoading } = useQuery<BlogPost[]>({
-    queryKey: ["/api/blog"],
-    queryFn: fetchBlogList,
-  });
+  const posts = blogPostsList;
 
   return (
     <div className="container mx-auto px-4 py-16 max-w-5xl">
@@ -38,23 +20,7 @@ export default function Blog() {
         </p>
       </div>
 
-      {isLoading && (
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[1,2,3].map(i => (
-            <Card key={i} className="overflow-hidden animate-pulse">
-              <div className="h-48 bg-slate-200" />
-              <CardContent className="p-6 space-y-3">
-                <div className="h-4 bg-slate-200 rounded w-1/3" />
-                <div className="h-6 bg-slate-200 rounded w-full" />
-                <div className="h-4 bg-slate-200 rounded w-full" />
-                <div className="h-4 bg-slate-200 rounded w-2/3" />
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      )}
-
-      {!isLoading && posts && posts.length === 0 && (
+      {posts.length === 0 && (
         <div className="text-center py-20">
           <BookOpen className="w-16 h-16 text-muted-foreground/30 mx-auto mb-4" />
           <h2 className="text-xl font-bold mb-2">Próximamente</h2>
@@ -62,7 +28,7 @@ export default function Blog() {
         </div>
       )}
 
-      {!isLoading && posts && posts.length > 0 && (
+      {posts.length > 0 && (
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {posts.map((post) => (
             <Link key={post.id} href={`/blog/${post.slug}`}>

@@ -1,49 +1,16 @@
-import { useQuery } from "@tanstack/react-query";
 import { useParams, Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Calendar, User } from "lucide-react";
 import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
-import type { BlogPost as BlogPostType } from "@shared/schema";
+import { blogPostsData } from "@/data/blogPosts";
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
-
-  const { data: post, isLoading, error } = useQuery<BlogPostType>({
-    queryKey: ["/api/blog", slug],
-    queryFn: async () => {
-      const urls = [`/api/blog/${slug}.json`, `/api/blog/${slug}`];
-      for (const url of urls) {
-        try {
-          const res = await fetch(url);
-          if (res.ok) {
-            const ct = res.headers.get("content-type") || "";
-            if (ct.includes("json")) return res.json();
-          }
-        } catch {}
-      }
-      throw new Error("No encontrado");
-    },
-  });
+  const post = blogPostsData.find(p => p.slug === slug);
 
   const WHATSAPP_LINK = "https://wa.me/525514961386?text=Hola%20Dr.%20Jorge,%20vengo%20de%20su%20blog%20y%20me%20gustar%C3%ADa%20agendar%20una%20cita.";
 
-  if (isLoading) {
-    return (
-      <div className="container mx-auto px-4 py-16 max-w-3xl animate-pulse">
-        <div className="h-8 bg-slate-200 rounded w-1/4 mb-8" />
-        <div className="h-64 bg-slate-200 rounded-2xl mb-8" />
-        <div className="space-y-3">
-          <div className="h-10 bg-slate-200 rounded w-3/4" />
-          <div className="h-4 bg-slate-200 rounded w-1/3" />
-          <div className="h-4 bg-slate-200 rounded w-full mt-8" />
-          <div className="h-4 bg-slate-200 rounded w-full" />
-          <div className="h-4 bg-slate-200 rounded w-2/3" />
-        </div>
-      </div>
-    );
-  }
-
-  if (error || !post) {
+  if (!post) {
     return (
       <div className="container mx-auto px-4 py-16 max-w-3xl text-center">
         <h1 className="text-2xl font-bold mb-4">Artículo no encontrado</h1>
