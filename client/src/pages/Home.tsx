@@ -401,12 +401,16 @@ export default function Home() {
               </p>
               <div className="space-y-3">
                 {[
-                  { name: "Grupo Star Médica", desc: "Hospital Star Médica Luna Parc, Cuautitlán Izcalli" },
-                  { name: "Grupo Ángeles", desc: "Red de hospitales de alta especialidad" },
-                  { name: "Grupo San Ángel Inn", desc: "Atención médica de calidad y calidez" },
+                  { name: "Grupo Star Médica", desc: "Hospital Star Médica Luna Parc, Cuautitlán Izcalli", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502693/starmedica_nyt3zu.png" },
+                  { name: "Grupo Ángeles", desc: "Red de hospitales de alta especialidad", logo: "" },
+                  { name: "Grupo San Ángel Inn", desc: "Atención médica de calidad y calidez", logo: "" },
                 ].map((hospital) => (
-                  <div key={hospital.name} className="flex items-start gap-3" data-testid={`text-hospital-${hospital.name.toLowerCase().replace(/\s/g, '-')}`}>
-                    <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                  <div key={hospital.name} className="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 transition-colors" data-testid={`text-hospital-${hospital.name.toLowerCase().replace(/\s/g, '-')}`}>
+                    {hospital.logo ? (
+                      <img src={hospital.logo} alt={`Logo ${hospital.name}`} title={hospital.name} className="h-8 w-8 object-contain flex-shrink-0 rounded" loading="lazy" decoding="async" />
+                    ) : (
+                      <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
+                    )}
                     <div>
                       <span className="text-sm font-semibold text-slate-800">{hospital.name}</span>
                       <p className="text-xs text-muted-foreground">{hospital.desc}</p>
