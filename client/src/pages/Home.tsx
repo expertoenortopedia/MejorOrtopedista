@@ -375,7 +375,7 @@ export default function Home() {
                   { name: "Allianz", logo: "" },
                   { name: "Zurich", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502694/zurich_oalh8v.png" },
                   { name: "BUPA", logo: "" },
-                  { name: "Mapfre", logo: "" },
+                  { name: "Mapfre", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502686/maphre_ju0uoo.png" },
                   { name: "Seguros Monterrey", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502689/monterrey_nitwcs.png" },
                 ].map((seguro) => (
                   <div key={seguro.name} className="px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl flex items-center justify-center" data-testid={`tag-seguro-${seguro.name.toLowerCase().replace(/\s/g, '-')}`}>
