@@ -83,8 +83,13 @@ export default function Home() {
             <div className="relative animate-in fade-in slide-in-from-right-8 duration-1000 delay-200 hidden md:block">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-[2rem] -rotate-3 scale-105" />
               <img 
-                src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772415646/ChatGPT_Image_1_mar_2026_07_40_32_p.m._ygzejw.png"
-                alt="Doctor examinando rodilla de paciente" 
+                src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772580870/ChatGPT_Image_3_mar_2026_05_34_31_p.m._xgkkzn.png"
+                alt="Ortopedista en Estado de México — consulta especializada en rodilla y hombro en Cuautitlán Izcalli"
+                title="Dr. Jorge Luis Córdova Fonseca — ortopedista en Cuautitlán Izcalli, Estado de México"
+                width={800}
+                height={600}
+                loading="eager"
+                decoding="async"
                 className="relative rounded-[2rem] shadow-2xl object-cover aspect-[4/3] w-full"
               />
               
