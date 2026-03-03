@@ -147,13 +147,22 @@ export default function LigamentoCruzado() {
               </div>
             </div>
             <div>
-              <img
-                src="https://images.unsplash.com/photo-1580281657527-47d97f3b7f0d?w=800&q=80"
-                alt="Paciente con síntomas de lesión de ligamento cruzado anterior en consulta"
-                className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
-                loading="lazy"
-                data-testid="img-sintomas-lca"
-              />
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772556485/ChatGPT_Image_4_mar_2026_10_48_21_a.m._sshj7m.png"
+                  alt="Paciente en cirugía de reconstrucción de ligamento cruzado anterior (LCA) de rodilla realizada por ortopedista especialista en lesión de LCA"
+                  title="Síntomas de lesión de ligamento cruzado anterior - Especialista en reconstrucción de LCA"
+                  width={800}
+                  height={600}
+                  className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
+                  loading="lazy"
+                  decoding="async"
+                  data-testid="img-sintomas-lca"
+                />
+                <figcaption className="text-xs text-muted-foreground mt-2 text-center italic">
+                  Especialista en tratamiento quirúrgico y conservador del ligamento cruzado anterior (LCA) y lesiones deportivas de rodilla
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
