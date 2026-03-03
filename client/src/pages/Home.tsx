@@ -12,7 +12,6 @@ import { Link } from "wouter";
 import type { BlogPost } from "@shared/schema";
 import heroImg from "@/assets/images/hero-medical.png";
 import doctorImg from "@/assets/images/doctor-portrait.png";
-import clinicImg from "@/assets/images/clinic-interior.png";
 
 export default function Home() {
   const WHATSAPP_LINK = "https://wa.me/525514961386?text=Hola%20Dr.%20Jorge,%20vengo%20de%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20agendar%20una%20cita.";
@@ -175,11 +174,19 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <img 
-                src={clinicImg} 
-                alt="Instalaciones de primer nivel" 
-                className="rounded-3xl shadow-xl object-cover w-full h-[500px]"
-              />
+              <figure>
+                <img 
+                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772580320/ChatGPT_Image_3_mar_2026_05_25_21_p.m._ot4alb.png"
+                  alt="Tratamientos de ortopedia en Cuautitlán Izcalli — soluciones conservadoras y quirúrgicas para lesiones de rodilla, hombro y articulaciones"
+                  title="Ortopedista en Cuautitlán Izcalli — tratamientos de menos a más invasivos"
+                  width={800}
+                  height={500}
+                  loading="lazy"
+                  decoding="async"
+                  className="rounded-3xl shadow-xl object-cover w-full h-[500px]"
+                />
+                <figcaption className="sr-only">Soluciones ortopédicas personalizadas en Cuautitlán Izcalli: desde tratamiento conservador hasta cirugía avanzada</figcaption>
+              </figure>
             </div>
             
             <div className="space-y-8">
