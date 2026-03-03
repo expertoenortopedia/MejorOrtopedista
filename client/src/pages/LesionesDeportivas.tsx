@@ -166,13 +166,22 @@ export default function LesionesDeportivas() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <img
-                src="https://images.unsplash.com/photo-1580281657527-47d97f3b7f0d?w=800&q=80"
-                alt="Evaluación de síntomas de lesión deportiva por ortopedista"
-                className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
-                loading="lazy"
-                data-testid="img-sintomas-deportivas"
-              />
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772560260/ChatGPT_Image_4_mar_2026_11_51_31_a.m._huc1cq.png"
+                  alt="Paciente realizando rehabilitación de rodilla con equipo robótico asistido y supervisión de fisioterapeuta en clínica de ortopedia en Estado de México"
+                  title="Rehabilitación de rodilla con tecnología robótica en Estado de México"
+                  width={1200}
+                  height={900}
+                  className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
+                  loading="lazy"
+                  decoding="async"
+                  data-testid="img-sintomas-deportivas"
+                />
+                <figcaption className="text-xs text-muted-foreground mt-2 text-center italic">
+                  Recuperación de rodilla con tecnología de vanguardia y supervisión especializada para volver a moverte con seguridad y confianza
+                </figcaption>
+              </figure>
             </div>
             <div className="order-1 lg:order-2">
               <h2 className="font-serif text-2xl md:text-3xl font-bold mb-4 text-slate-900">
