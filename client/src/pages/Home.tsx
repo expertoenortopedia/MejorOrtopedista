@@ -392,9 +392,7 @@ export default function Home() {
                       ) : (
                         <span className="text-xs font-medium text-slate-600">{seguro.name}</span>
                       )}
-                      {seguro.pdfUrl && (
-                        <span className="text-[10px] text-primary font-medium mt-1">Descargar formato</span>
-                      )}
+                      
                     </div>
                   );
                   if (seguro.pdfUrl) {
