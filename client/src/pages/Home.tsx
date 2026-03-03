@@ -378,21 +378,34 @@ export default function Home() {
                 {[
                   { name: "GNP", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502685/gnp_vrr37x.jpg" },
                   { name: "AXA", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502681/axa_cqycx8.png" },
-                  { name: "Metlife", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502689/metlife_dc83pp.png" },
+                  { name: "Metlife", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502689/metlife_dc83pp.png", pdfUrl: "/docs/metlife-informe-medico.pdf" },
                   { name: "Allianz", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772503029/allianz_bprduo.jpg" },
                   { name: "Zurich", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502694/zurich_oalh8v.png" },
                   { name: "BUPA", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502682/bupa_kgwsym.jpg" },
                   { name: "Mapfre", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502686/maphre_ju0uoo.png" },
                   { name: "Seguros Monterrey", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502689/monterrey_nitwcs.png" },
-                ].map((seguro) => (
-                  <div key={seguro.name} className="px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl flex items-center justify-center" data-testid={`tag-seguro-${seguro.name.toLowerCase().replace(/\s/g, '-')}`}>
-                    {seguro.logo ? (
-                      <img src={seguro.logo} alt={`Logo ${seguro.name} seguros de gastos médicos`} title={seguro.name} className="h-10 w-auto object-contain" loading="lazy" decoding="async" />
-                    ) : (
-                      <span className="text-xs font-medium text-slate-600">{seguro.name}</span>
-                    )}
-                  </div>
-                ))}
+                ].map((seguro) => {
+                  const content = (
+                    <div key={seguro.name} className={`px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl flex flex-col items-center justify-center ${seguro.pdfUrl ? "cursor-pointer hover:border-primary/40 hover:shadow-md transition-all" : ""}`} data-testid={`tag-seguro-${seguro.name.toLowerCase().replace(/\s/g, '-')}`}>
+                      {seguro.logo ? (
+                        <img src={seguro.logo} alt={`Logo ${seguro.name} seguros de gastos médicos`} title={seguro.name} className="h-10 w-auto object-contain" loading="lazy" decoding="async" />
+                      ) : (
+                        <span className="text-xs font-medium text-slate-600">{seguro.name}</span>
+                      )}
+                      {seguro.pdfUrl && (
+                        <span className="text-[10px] text-primary font-medium mt-1">Descargar formato</span>
+                      )}
+                    </div>
+                  );
+                  if (seguro.pdfUrl) {
+                    return (
+                      <a key={seguro.name} href={seguro.pdfUrl} target="_blank" rel="noopener noreferrer" data-testid={`link-pdf-${seguro.name.toLowerCase()}`}>
+                        {content}
+                      </a>
+                    );
+                  }
+                  return content;
+                })}
               </div>
             </div>
 
