@@ -129,7 +129,7 @@ export default function Home() {
               const cardContent = (
                 <Card key={idx} className={`border border-slate-100 hover:border-primary/20 shadow-sm hover:shadow-md transition-all group overflow-hidden ${item.link ? "cursor-pointer" : ""}`} data-testid={`card-specialty-${idx}`}>
                   <CardContent className="p-8">
-                    <div className="mb-6 p-2 bg-slate-50 group-hover:bg-primary/5 rounded-2xl w-28 h-28 flex items-center justify-center transition-colors overflow-hidden">
+                    <div className="mb-6 p-2 bg-slate-50 group-hover:bg-primary/5 rounded-2xl w-28 h-28 mx-auto flex items-center justify-center transition-colors overflow-hidden">
                       {item.img ? (
                         <img src={item.img} alt={item.title} className="w-full h-full object-contain rounded-xl" loading="lazy" decoding="async" />
                       ) : (
