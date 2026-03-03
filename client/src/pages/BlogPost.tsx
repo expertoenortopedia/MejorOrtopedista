@@ -11,20 +11,16 @@ export default function BlogPost() {
   const { data: post, isLoading, error } = useQuery<BlogPostType>({
     queryKey: ["/api/blog", slug],
     queryFn: async () => {
-      try {
-        const apiRes = await fetch(`/api/blog/${slug}`);
-        if (apiRes.ok) {
-          const ct = apiRes.headers.get("content-type") || "";
-          if (ct.includes("application/json")) return apiRes.json();
-        }
-      } catch {}
-      try {
-        const staticRes = await fetch(`/api/blog/${slug}.json`);
-        if (staticRes.ok) {
-          const ct = staticRes.headers.get("content-type") || "";
-          if (ct.includes("application/json")) return staticRes.json();
-        }
-      } catch {}
+      const urls = [`/api/blog/${slug}.json`, `/api/blog/${slug}`];
+      for (const url of urls) {
+        try {
+          const res = await fetch(url);
+          if (res.ok) {
+            const ct = res.headers.get("content-type") || "";
+            if (ct.includes("json")) return res.json();
+          }
+        } catch {}
+      }
       throw new Error("No encontrado");
     },
   });

@@ -6,20 +6,16 @@ import { Link } from "wouter";
 import type { BlogPost } from "@shared/schema";
 
 async function fetchBlogList(): Promise<BlogPost[]> {
-  try {
-    const apiRes = await fetch("/api/blog");
-    if (apiRes.ok) {
-      const ct = apiRes.headers.get("content-type") || "";
-      if (ct.includes("application/json")) return apiRes.json();
-    }
-  } catch {}
-  try {
-    const staticRes = await fetch("/api/blog.json");
-    if (staticRes.ok) {
-      const ct = staticRes.headers.get("content-type") || "";
-      if (ct.includes("application/json")) return staticRes.json();
-    }
-  } catch {}
+  const urls = ["/api/blog.json", "/api/blog"];
+  for (const url of urls) {
+    try {
+      const res = await fetch(url);
+      if (res.ok) {
+        const ct = res.headers.get("content-type") || "";
+        if (ct.includes("json")) return res.json();
+      }
+    } catch {}
+  }
   return [];
 }
 
