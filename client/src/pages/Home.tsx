@@ -90,7 +90,7 @@ export default function Home() {
                 height={600}
                 loading="eager"
                 decoding="async"
-                className="relative rounded-[2rem] shadow-2xl object-cover aspect-[3/4] w-full"
+                className="relative rounded-[2rem] shadow-2xl object-cover aspect-[4/3] w-full"
               />
               
               {/* Floating Badge */}
