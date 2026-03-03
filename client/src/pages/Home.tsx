@@ -379,7 +379,7 @@ export default function Home() {
                   { name: "GNP", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502685/gnp_vrr37x.jpg" },
                   { name: "AXA", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502681/axa_cqycx8.png" },
                   { name: "Metlife", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502689/metlife_dc83pp.png", pdfUrl: "/docs/metlife-informe-medico.pdf" },
-                  { name: "Allianz", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772503029/allianz_bprduo.jpg" },
+                  { name: "Allianz", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772503029/allianz_bprduo.jpg", pdfUrl: "/docs/allianz-informe-medico.pdf" },
                   { name: "Zurich", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502694/zurich_oalh8v.png" },
                   { name: "BUPA", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502682/bupa_kgwsym.jpg" },
                   { name: "Mapfre", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502686/maphre_ju0uoo.png" },
