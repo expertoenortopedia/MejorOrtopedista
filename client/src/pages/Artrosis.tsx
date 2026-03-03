@@ -103,13 +103,22 @@ export default function Artrosis() {
               </a>
             </div>
             <div className="relative">
-              <img
-                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80"
-                alt="Consulta ortopédica para diagnóstico de artrosis de rodilla y cadera"
-                className="rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]"
-                loading="eager"
-                data-testid="img-hero-artrosis"
-              />
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772557153/ChatGPT_Image_4_mar_2026_10_59_11_a.m._1_ld3ydv.png"
+                  alt="Imagen clínica de desgaste de cartílago en rodilla (artrosis) causando dolor y limitación funcional tratada por ortopedista especialista en rodilla"
+                  title="Desgaste articular y artrosis de rodilla - Ortopedista especialista en cartílago de rodilla"
+                  width={800}
+                  height={600}
+                  className="rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]"
+                  loading="eager"
+                  decoding="async"
+                  data-testid="img-hero-artrosis"
+                />
+                <figcaption className="text-xs text-muted-foreground mt-2 text-center italic">
+                  Tratamiento especializado para desgaste de cartílago y artrosis de rodilla con opciones conservadoras y quirúrgicas
+                </figcaption>
+              </figure>
               <div className="absolute -bottom-4 -left-4 bg-white rounded-xl shadow-lg p-4 hidden md:block">
                 <p className="text-sm font-bold text-primary">+25 años</p>
                 <p className="text-xs text-muted-foreground">de experiencia</p>
