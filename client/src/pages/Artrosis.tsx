@@ -223,13 +223,22 @@ export default function Artrosis() {
               ))}
             </div>
             <div>
-              <img
-                src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?w=800&q=80"
-                alt="Tratamiento especializado para artrosis de rodilla y cadera"
-                className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
-                loading="lazy"
-                data-testid="img-tratamientos-artrosis"
-              />
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772557460/ChatGPT_Image_4_mar_2026_11_05_10_a.m._gwndwj.png"
+                  alt="Paciente realizando rehabilitación de rodilla con banda elástica supervisado por ortopedista en CDMX para tratamiento de dolor de rodilla"
+                  title="Rehabilitación de rodilla en CDMX | Tratamiento especializado por ortopedista"
+                  width={1200}
+                  height={900}
+                  className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
+                  loading="lazy"
+                  decoding="async"
+                  data-testid="img-tratamientos-artrosis"
+                />
+                <figcaption className="text-xs text-muted-foreground mt-2 text-center italic">
+                  Recupera la movilidad de tu rodilla con un programa de rehabilitación personalizado y supervisado por especialista en ortopedia
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
