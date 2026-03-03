@@ -146,9 +146,9 @@ export default function LesionMenisco() {
             <div>
               <figure>
                 <img
-                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772555615/ChatGPT_Image_4_mar_2026_10_12_52_a.m._bfhjls.png"
-                  alt="Paciente en cirugía de meniscos mediante artroscopia de rodilla realizada por ortopedista especialista en dolor de rodilla en el Estado de México"
-                  title="Síntomas de lesión de menisco - Ortopedista especialista en rodilla en Estado de México"
+                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772556763/ChatGPT_Image_4_mar_2026_10_52_48_a.m._nc3wyd.png"
+                  alt="Paciente en cirugía de reconstrucción de ligamento cruzado anterior (LCA) y menisco de rodilla realizada por ortopedista especialista en lesión de LCA"
+                  title="Síntomas de lesión de menisco y ligamento cruzado anterior - Ortopedista especialista en rodilla"
                   width={800}
                   height={600}
                   className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
@@ -157,7 +157,7 @@ export default function LesionMenisco() {
                   data-testid="img-sintomas-menisco"
                 />
                 <figcaption className="text-xs text-muted-foreground mt-2 text-center italic">
-                  Ortopedista especialista en cirugía de meniscos y dolor de rodilla en Estado de México
+                  Ortopedista especialista en cirugía de menisco, reconstrucción de LCA y lesiones deportivas de rodilla
                 </figcaption>
               </figure>
             </div>
