@@ -238,13 +238,22 @@ export default function DolorHombro() {
               ))}
             </div>
             <div>
-              <img
-                src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?w=800&q=80"
-                alt="Tratamiento especializado para lesión del manguito rotador"
-                className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
-                loading="lazy"
-                data-testid="img-tratamientos-hombro"
-              />
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772559455/ChatGPT_Image_4_mar_2026_11_38_30_a.m._j40bqw.png"
+                  alt="Cirugía artroscópica de hombro con reparación del manguito rotador en quirófano realizada por ortopedista especialista en Estado de México"
+                  title="Artroscopia de hombro y reparación de manguito rotador - Ortopedista en Estado de México"
+                  width={1200}
+                  height={900}
+                  className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
+                  loading="lazy"
+                  decoding="async"
+                  data-testid="img-tratamientos-hombro"
+                />
+                <figcaption className="text-xs text-muted-foreground mt-2 text-center italic">
+                  Cirugía artroscópica de hombro: tratamiento preciso y mínimamente invasivo para aliviar el dolor y recuperar la movilidad
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
