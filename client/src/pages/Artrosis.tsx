@@ -149,13 +149,22 @@ export default function Artrosis() {
               </div>
             </div>
             <div>
-              <img
-                src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&q=80"
-                alt="Paciente con síntomas de artrosis de rodilla siendo evaluado por ortopedista"
-                className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
-                loading="lazy"
-                data-testid="img-sintomas-artrosis"
-              />
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772557286/ChatGPT_Image_4_mar_2026_11_02_19_a.m._1_aid1dt.png"
+                  alt="Hombre con dolor intenso en rodilla derecha sujetándose la articulación en casa, imagen representativa de dolor de rodilla tratada por ortopedista en CDMX"
+                  title="Dolor de rodilla en CDMX | Ortopedista especialista en rodilla"
+                  width={1200}
+                  height={900}
+                  className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
+                  loading="lazy"
+                  decoding="async"
+                  data-testid="img-sintomas-artrosis"
+                />
+                <figcaption className="text-xs text-muted-foreground mt-2 text-center italic">
+                  ¿Dolor de rodilla al caminar o levantarte? Una valoración oportuna puede evitar complicaciones mayores
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
