@@ -98,13 +98,22 @@ export default function LesionMenisco() {
               </a>
             </div>
             <div className="relative">
-              <img
-                src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&q=80"
-                alt="Evaluación médica de rodilla por especialista en lesión de menisco"
-                className="rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]"
-                loading="eager"
-                data-testid="img-hero-menisco"
-              />
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772555615/ChatGPT_Image_4_mar_2026_10_12_52_a.m._bfhjls.png"
+                  alt="Lesión de menisco diagnosticada por ortopedista especialista en rodilla en Estado de México mediante artroscopia"
+                  title="Lesión de menisco: síntomas, causas y tratamiento - Especialista en rodilla en Cuautitlán Izcalli"
+                  width={800}
+                  height={600}
+                  className="rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]"
+                  loading="eager"
+                  decoding="async"
+                  data-testid="img-hero-menisco"
+                />
+                <figcaption className="text-xs text-muted-foreground mt-2 text-center italic">
+                  Especialista en lesión de menisco y dolor de rodilla en Cuautitlán Izcalli
+                </figcaption>
+              </figure>
               <div className="absolute -bottom-4 -left-4 bg-white rounded-xl shadow-lg p-4 hidden md:block">
                 <p className="text-sm font-bold text-primary">+25 años</p>
                 <p className="text-xs text-muted-foreground">de experiencia</p>
