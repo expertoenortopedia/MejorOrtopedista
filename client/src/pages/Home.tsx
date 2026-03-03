@@ -374,7 +374,7 @@ export default function Home() {
                   { name: "Metlife", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502689/metlife_dc83pp.png" },
                   { name: "Allianz", logo: "" },
                   { name: "Zurich", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502694/zurich_oalh8v.png" },
-                  { name: "BUPA", logo: "" },
+                  { name: "BUPA", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502682/bupa_kgwsym.jpg" },
                   { name: "Mapfre", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502686/maphre_ju0uoo.png" },
                   { name: "Seguros Monterrey", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502689/monterrey_nitwcs.png" },
                 ].map((seguro) => (
