@@ -162,15 +162,22 @@ export default function DolorDeRodilla() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <img
-                src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772492995/ChatGPT_Image_2_mar_2026_05_09_46_p.m._xkrkbn.png"
-                alt="Dolor de rodilla por desgaste articular tratado con cirugía especializada"
-                title="Especialista en cirugía de rodilla y desgaste articular"
-                className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
-                loading="lazy"
-                decoding="async"
-                data-testid="img-alertas"
-              />
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772560356/ChatGPT_Image_4_mar_2026_11_53_16_a.m._qxwplf.png"
+                  alt="Paciente deportista con vendaje neuromuscular en hombro para tratamiento de dolor y rehabilitación deportiva en Estado de México"
+                  title="Vendaje neuromuscular en hombro | Tratamiento ortopédico deportivo en Estado de México"
+                  width={1200}
+                  height={900}
+                  className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
+                  loading="lazy"
+                  decoding="async"
+                  data-testid="img-alertas"
+                />
+                <figcaption className="text-xs text-muted-foreground mt-2 text-center italic">
+                  Recupera la estabilidad y movilidad de tu hombro con técnicas avanzadas de vendaje neuromuscular aplicadas por especialista en ortopedia deportiva
+                </figcaption>
+              </figure>
             </div>
             <div className="order-1 lg:order-2">
               <h2 className="font-serif text-2xl md:text-3xl font-bold mb-4 text-slate-900">
