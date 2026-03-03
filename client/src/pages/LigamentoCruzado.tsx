@@ -182,13 +182,22 @@ export default function LigamentoCruzado() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <img
-                src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?w=800&q=80"
-                alt="Diagnóstico especializado de ligamento cruzado anterior en Cuautitlán Izcalli"
-                className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
-                loading="lazy"
-                data-testid="img-alertas-lca"
-              />
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772562747/ChatGPT_Image_4_mar_2026_12_33_22_p.m._k1scmn.png"
+                  alt="Paciente adulto con dolor intenso en rodilla por posible lesión del ligamento cruzado anterior en consulta de ortopedia en Estado de México"
+                  title="Dolor de rodilla por lesión del ligamento cruzado anterior | Ortopedista en Estado de México"
+                  width={1200}
+                  height={900}
+                  className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
+                  loading="lazy"
+                  decoding="async"
+                  data-testid="img-alertas-lca"
+                />
+                <figcaption className="text-xs text-muted-foreground mt-2 text-center italic">
+                  ¿Sientes dolor o inestabilidad en la rodilla? Una lesión del ligamento cruzado anterior puede requerir valoración especializada para recuperar tu movilidad
+                </figcaption>
+              </figure>
             </div>
             <div className="order-1 lg:order-2">
               <h2 className="font-serif text-2xl md:text-3xl font-bold mb-4 text-slate-900">
