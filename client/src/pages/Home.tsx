@@ -119,7 +119,7 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: "Dolor de rodilla", desc: "Soluciones para dolor crónico, chasquidos al caminar, inflamación y limitación de movimiento.", icon: KneeIcon, link: "/dolor-de-rodilla-cuautitlan-izcalli" },
+              { title: "Dolor de rodilla", desc: "Soluciones para dolor crónico, chasquidos al caminar, inflamación y limitación de movimiento.", icon: Activity, link: "/dolor-de-rodilla-cuautitlan-izcalli" },
               { title: "Lesión de meniscos", desc: "Atención especializada si sientes bloqueos en la rodilla, dolor agudo al rotar o inestabilidad.", icon: Bone, link: "/lesion-menisco-cuautitlan-izcalli" },
               { title: "Ligamento cruzado", desc: "Reconstrucción y tratamiento tras lesiones deportivas o accidentes que causan fallo en la rodilla.", icon: HeartPulse, link: "/ligamento-cruzado-anterior-cuautitlan-izcalli" },
               { title: "Desgaste articular (Artrosis)", desc: "Tratamientos para el desgaste del cartílago. Retrasamos el avance y aliviamos el dolor profundo.", icon: Stethoscope, link: "/artrosis-rodilla-cadera-cuautitlan-izcalli" },
