@@ -380,7 +380,7 @@ export default function Home() {
                 ].map((seguro) => (
                   <div key={seguro.name} className="px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl flex items-center justify-center" data-testid={`tag-seguro-${seguro.name.toLowerCase().replace(/\s/g, '-')}`}>
                     {seguro.logo ? (
-                      <img src={seguro.logo} alt={`Logo ${seguro.name} seguros de gastos médicos`} title={seguro.name} className="h-6 w-auto object-contain" loading="lazy" decoding="async" />
+                      <img src={seguro.logo} alt={`Logo ${seguro.name} seguros de gastos médicos`} title={seguro.name} className="h-10 w-auto object-contain" loading="lazy" decoding="async" />
                     ) : (
                       <span className="text-xs font-medium text-slate-600">{seguro.name}</span>
                     )}
@@ -407,7 +407,7 @@ export default function Home() {
                 ].map((hospital) => (
                   <div key={hospital.name} className="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 transition-colors" data-testid={`text-hospital-${hospital.name.toLowerCase().replace(/\s/g, '-')}`}>
                     {hospital.logo ? (
-                      <img src={hospital.logo} alt={`Logo ${hospital.name}`} title={hospital.name} className="h-8 w-8 object-contain flex-shrink-0 rounded" loading="lazy" decoding="async" />
+                      <img src={hospital.logo} alt={`Logo ${hospital.name}`} title={hospital.name} className="h-12 w-12 object-contain flex-shrink-0 rounded" loading="lazy" decoding="async" />
                     ) : (
                       <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
                     )}
