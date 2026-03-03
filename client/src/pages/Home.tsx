@@ -369,7 +369,7 @@ export default function Home() {
               </p>
               <div className="flex flex-wrap gap-3 items-center">
                 {[
-                  { name: "GNP", logo: "" },
+                  { name: "GNP", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502685/gnp_vrr37x.jpg" },
                   { name: "AXA", logo: "" },
                   { name: "Metlife", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502689/metlife_dc83pp.png" },
                   { name: "Allianz", logo: "" },
