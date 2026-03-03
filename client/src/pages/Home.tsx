@@ -341,7 +341,7 @@ export default function Home() {
       </section>
 
       {/* SEGUROS Y HOSPITALES */}
-      <section className="py-14 bg-slate-50 border-y border-slate-100" data-testid="section-seguros-hospitales">
+      <section id="seguros" className="py-14 bg-slate-50 border-y border-slate-100" data-testid="section-seguros-hospitales">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-10">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-3">
