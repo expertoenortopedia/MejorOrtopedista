@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { 
   Activity, ArrowRight, Award, Bone, BookOpen, CheckCircle2, 
   Calendar, ChevronRight, HeartPulse, ShieldCheck, 
-  Star, Stethoscope, UserCheck 
+  Star, Stethoscope, UserCheck, Building2, Shield 
 } from "lucide-react";
 import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import { useQuery } from "@tanstack/react-query";
@@ -336,6 +336,72 @@ export default function Home() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SEGUROS Y HOSPITALES */}
+      <section className="py-14 bg-slate-50 border-y border-slate-100" data-testid="section-seguros-hospitales">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-3">
+              <Shield className="w-4 h-4" />
+              Seguros y Hospitales
+            </div>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-slate-900 mb-2">
+              Trabajamos con tu seguro de gastos médicos
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Aceptamos las principales aseguradoras de gastos médicos mayores y atendemos en los mejores grupos hospitalarios de México.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100" data-testid="card-seguros">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-2.5 bg-primary/10 rounded-xl">
+                  <ShieldCheck className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900">Seguros de Gastos Médicos</h3>
+              </div>
+              <p className="text-muted-foreground text-sm mb-4">
+                Aceptamos la mayoría de las aseguradoras de gastos médicos mayores. Consulta con nosotros para verificar tu póliza.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {["GNP", "AXA", "Metlife", "Allianz", "Zurich", "BUPA", "Mapfre", "Seguros Monterrey"].map((seguro) => (
+                  <span key={seguro} className="px-3 py-1 bg-slate-50 border border-slate-200 rounded-full text-xs font-medium text-slate-600" data-testid={`tag-seguro-${seguro.toLowerCase().replace(/\s/g, '-')}`}>
+                    {seguro}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100" data-testid="card-hospitales">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-2.5 bg-primary/10 rounded-xl">
+                  <Building2 className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900">Grupos Hospitalarios</h3>
+              </div>
+              <p className="text-muted-foreground text-sm mb-4">
+                Atendemos en hospitales de prestigio con la mejor infraestructura y tecnología médica.
+              </p>
+              <div className="space-y-3">
+                {[
+                  { name: "Grupo Star Médica", desc: "Hospital Star Médica Luna Parc, Cuautitlán Izcalli" },
+                  { name: "Grupo Ángeles", desc: "Red de hospitales de alta especialidad" },
+                  { name: "Grupo San Ángel Inn", desc: "Atención médica de calidad y calidez" },
+                ].map((hospital) => (
+                  <div key={hospital.name} className="flex items-start gap-3" data-testid={`text-hospital-${hospital.name.toLowerCase().replace(/\s/g, '-')}`}>
+                    <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                    <div>
+                      <span className="text-sm font-semibold text-slate-800">{hospital.name}</span>
+                      <p className="text-xs text-muted-foreground">{hospital.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
