@@ -136,15 +136,22 @@ export default function DolorDeRodilla() {
               </div>
             </div>
             <div>
-              <img
-                src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772493530/ChatGPT_Image_2_mar_2026_05_18_28_p.m._nmcsxx.png"
-                alt="Dolor de rodilla por desgaste de cartílago tratado con cirugía por ortopedista en Cuautitlán Izcalli"
-                title="Ortopedista en Cuautitlán Izcalli especialista en cirugía de rodilla y desgaste de cartílago"
-                className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
-                loading="lazy"
-                decoding="async"
-                data-testid="img-sintomas"
-              />
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772560260/ChatGPT_Image_4_mar_2026_11_51_31_a.m._huc1cq.png"
+                  alt="Paciente realizando rehabilitación de rodilla con equipo robótico asistido y supervisión de fisioterapeuta en clínica de ortopedia en Estado de México"
+                  title="Rehabilitación de rodilla con tecnología robótica en Estado de México"
+                  width={1200}
+                  height={900}
+                  className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
+                  loading="lazy"
+                  decoding="async"
+                  data-testid="img-sintomas"
+                />
+                <figcaption className="text-xs text-muted-foreground mt-2 text-center italic">
+                  Recuperación de rodilla con tecnología de vanguardia y supervisión especializada para volver a moverte con seguridad y confianza
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
