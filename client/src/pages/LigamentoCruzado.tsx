@@ -248,13 +248,22 @@ export default function LigamentoCruzado() {
               ))}
             </div>
             <div>
-              <img
-                src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&q=80"
-                alt="Tratamiento y rehabilitación de ligamento cruzado anterior por especialista"
-                className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
-                loading="lazy"
-                data-testid="img-tratamientos-lca"
-              />
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772563068/ChatGPT_Image_4_mar_2026_12_38_38_p.m._1_pyz064.png"
+                  alt="Sala quirúrgica equipada con torre de artroscopia de alta definición para cirugía de rodilla en Estado de México"
+                  title="Sala de cirugía artroscópica de rodilla en Estado de México | Especialista en Ortopedia"
+                  width={1200}
+                  height={900}
+                  className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
+                  loading="lazy"
+                  decoding="async"
+                  data-testid="img-tratamientos-lca"
+                />
+                <figcaption className="text-xs text-muted-foreground mt-2 text-center italic">
+                  Tecnología de alta precisión para cirugía artroscópica de rodilla. Menor invasión, recuperación más rápida y resultados confiables en Estado de México
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
