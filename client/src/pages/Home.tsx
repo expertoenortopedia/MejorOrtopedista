@@ -119,18 +119,22 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: "Dolor de rodilla", desc: "Soluciones para dolor crónico, chasquidos al caminar, inflamación y limitación de movimiento.", icon: Activity, link: "/dolor-de-rodilla-cuautitlan-izcalli" },
-              { title: "Lesión de meniscos", desc: "Atención especializada si sientes bloqueos en la rodilla, dolor agudo al rotar o inestabilidad.", icon: Bone, link: "/lesion-menisco-cuautitlan-izcalli" },
-              { title: "Ligamento cruzado", desc: "Reconstrucción y tratamiento tras lesiones deportivas o accidentes que causan fallo en la rodilla.", icon: HeartPulse, link: "/ligamento-cruzado-anterior-cuautitlan-izcalli" },
-              { title: "Desgaste articular (Artrosis)", desc: "Tratamientos para el desgaste del cartílago. Retrasamos el avance y aliviamos el dolor profundo.", icon: Stethoscope, link: "/artrosis-rodilla-cadera-cuautitlan-izcalli" },
-              { title: "Dolor de hombro", desc: "Alivio para dolor al levantar el brazo, manguito rotador, tendinitis y hombro congelado.", icon: UserCheck, link: "/dolor-hombro-manguito-rotador-cuautitlan-izcalli" },
-              { title: "Lesiones deportivas", desc: "Recuperación rápida y segura para que regreses a tu deporte favorito en tu máximo rendimiento.", icon: Award, link: "/lesiones-deportivas-cuautitlan-izcalli" },
+              { title: "Dolor de rodilla", desc: "Soluciones para dolor crónico, chasquidos al caminar, inflamación y limitación de movimiento.", icon: Activity, img: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772504807/ChatGPT_Image_2_mar_2026_08_20_45_p.m._fji47g.png", link: "/dolor-de-rodilla-cuautitlan-izcalli" },
+              { title: "Lesión de meniscos", desc: "Atención especializada si sientes bloqueos en la rodilla, dolor agudo al rotar o inestabilidad.", icon: Bone, img: "", link: "/lesion-menisco-cuautitlan-izcalli" },
+              { title: "Ligamento cruzado", desc: "Reconstrucción y tratamiento tras lesiones deportivas o accidentes que causan fallo en la rodilla.", icon: HeartPulse, img: "", link: "/ligamento-cruzado-anterior-cuautitlan-izcalli" },
+              { title: "Desgaste articular (Artrosis)", desc: "Tratamientos para el desgaste del cartílago. Retrasamos el avance y aliviamos el dolor profundo.", icon: Stethoscope, img: "", link: "/artrosis-rodilla-cadera-cuautitlan-izcalli" },
+              { title: "Dolor de hombro", desc: "Alivio para dolor al levantar el brazo, manguito rotador, tendinitis y hombro congelado.", icon: UserCheck, img: "", link: "/dolor-hombro-manguito-rotador-cuautitlan-izcalli" },
+              { title: "Lesiones deportivas", desc: "Recuperación rápida y segura para que regreses a tu deporte favorito en tu máximo rendimiento.", icon: Award, img: "", link: "/lesiones-deportivas-cuautitlan-izcalli" },
             ].map((item, idx) => {
               const cardContent = (
                 <Card key={idx} className={`border border-slate-100 hover:border-primary/20 shadow-sm hover:shadow-md transition-all group overflow-hidden ${item.link ? "cursor-pointer" : ""}`} data-testid={`card-specialty-${idx}`}>
                   <CardContent className="p-8">
-                    <div className="mb-6 p-4 bg-slate-50 group-hover:bg-primary/5 rounded-2xl w-16 h-16 flex items-center justify-center transition-colors">
-                      <item.icon className="w-8 h-8 text-primary group-hover:scale-110 transition-transform" />
+                    <div className="mb-6 p-2 bg-slate-50 group-hover:bg-primary/5 rounded-2xl w-16 h-16 flex items-center justify-center transition-colors overflow-hidden">
+                      {item.img ? (
+                        <img src={item.img} alt={item.title} className="w-full h-full object-contain rounded-xl" loading="lazy" decoding="async" />
+                      ) : (
+                        <item.icon className="w-8 h-8 text-primary group-hover:scale-110 transition-transform" />
+                      )}
                     </div>
                     <h4 className="text-xl font-bold mb-3">{item.title}</h4>
                     <p className="text-muted-foreground leading-relaxed">
