@@ -367,11 +367,24 @@ export default function Home() {
               <p className="text-muted-foreground text-sm mb-4">
                 Aceptamos la mayoría de las aseguradoras de gastos médicos mayores. Consulta con nosotros para verificar tu póliza.
               </p>
-              <div className="flex flex-wrap gap-2">
-                {["GNP", "AXA", "Metlife", "Allianz", "Zurich", "BUPA", "Mapfre", "Seguros Monterrey"].map((seguro) => (
-                  <span key={seguro} className="px-3 py-1 bg-slate-50 border border-slate-200 rounded-full text-xs font-medium text-slate-600" data-testid={`tag-seguro-${seguro.toLowerCase().replace(/\s/g, '-')}`}>
-                    {seguro}
-                  </span>
+              <div className="flex flex-wrap gap-3 items-center">
+                {[
+                  { name: "GNP", logo: "" },
+                  { name: "AXA", logo: "" },
+                  { name: "Metlife", logo: "" },
+                  { name: "Allianz", logo: "" },
+                  { name: "Zurich", logo: "https://res.cloudinary.com/dcuuvanw3/image/upload/v1772502694/zurich_oalh8v.png" },
+                  { name: "BUPA", logo: "" },
+                  { name: "Mapfre", logo: "" },
+                  { name: "Seguros Monterrey", logo: "" },
+                ].map((seguro) => (
+                  <div key={seguro.name} className="px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl flex items-center justify-center" data-testid={`tag-seguro-${seguro.name.toLowerCase().replace(/\s/g, '-')}`}>
+                    {seguro.logo ? (
+                      <img src={seguro.logo} alt={`Logo ${seguro.name} seguros de gastos médicos`} title={seguro.name} className="h-6 w-auto object-contain" loading="lazy" decoding="async" />
+                    ) : (
+                      <span className="text-xs font-medium text-slate-600">{seguro.name}</span>
+                    )}
+                  </div>
                 ))}
               </div>
             </div>
