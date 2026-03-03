@@ -276,7 +276,7 @@ export default function LesionesDeportivas() {
             <div className="space-y-6">
               <figure>
                 <img
-                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772562204/ChatGPT_Image_4_mar_2026_12_24_09_p.m._mfyjqy.png"
+                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772567058/ChatGPT_Image_4_mar_2026_12_24_09_p.m._bwyzpg.png"
                   alt="Ortopedista evaluando rodilla de deportista en consulta médica especializada en lesiones deportivas en Cuautitlán Izcalli"
                   title="Evaluación de dolor de rodilla en deportista | Ortopedista en Cuautitlán Izcalli"
                   width={1200}

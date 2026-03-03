@@ -158,7 +158,7 @@ export default function LigamentoCruzado() {
             <div>
               <figure>
                 <img
-                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772562537/ChatGPT_Image_4_mar_2026_12_29_50_p.m._ex2obt.png"
+                  src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80"
                   alt="Futbolista con lesión del ligamento cruzado anterior en la rodilla durante partido mostrando dolor agudo tras mecanismo de torsión"
                   title="Lesión de Ligamento Cruzado Anterior en Futbolista | Ortopedista Deportivo en Estado de México"
                   width={1200}
@@ -184,7 +184,7 @@ export default function LigamentoCruzado() {
             <div className="order-2 lg:order-1">
               <figure>
                 <img
-                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772562747/ChatGPT_Image_4_mar_2026_12_33_22_p.m._k1scmn.png"
+                  src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&q=80"
                   alt="Paciente adulto con dolor intenso en rodilla por posible lesión del ligamento cruzado anterior en consulta de ortopedia en Estado de México"
                   title="Dolor de rodilla por lesión del ligamento cruzado anterior | Ortopedista en Estado de México"
                   width={1200}
