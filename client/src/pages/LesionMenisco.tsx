@@ -135,13 +135,22 @@ export default function LesionMenisco() {
               </div>
             </div>
             <div>
-              <img
-                src="https://images.unsplash.com/photo-1580281657527-47d97f3b7f0d?w=800&q=80"
-                alt="Paciente con síntomas de lesión de menisco en consulta ortopédica"
-                className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
-                loading="lazy"
-                data-testid="img-sintomas-menisco"
-              />
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772555615/ChatGPT_Image_4_mar_2026_10_12_52_a.m._bfhjls.png"
+                  alt="Paciente en cirugía de meniscos mediante artroscopia de rodilla realizada por ortopedista especialista en dolor de rodilla en el Estado de México"
+                  title="Síntomas de lesión de menisco - Ortopedista especialista en rodilla en Estado de México"
+                  width={800}
+                  height={600}
+                  className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
+                  loading="lazy"
+                  decoding="async"
+                  data-testid="img-sintomas-menisco"
+                />
+                <figcaption className="text-xs text-muted-foreground mt-2 text-center italic">
+                  Ortopedista especialista en cirugía de meniscos y dolor de rodilla en Estado de México
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
