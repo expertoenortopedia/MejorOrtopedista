@@ -230,13 +230,22 @@ export default function LesionesDeportivas() {
               </a>
             </div>
             <div>
-              <img
-                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80"
-                alt="Consulta ortopédica para diagnóstico de lesión deportiva"
-                className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
-                loading="lazy"
-                data-testid="img-alertas-deportivas"
-              />
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772560356/ChatGPT_Image_4_mar_2026_11_53_16_a.m._qxwplf.png"
+                  alt="Paciente deportista con vendaje neuromuscular en hombro para tratamiento de dolor y rehabilitación deportiva en Estado de México"
+                  title="Vendaje neuromuscular en hombro | Tratamiento ortopédico deportivo en Estado de México"
+                  width={1200}
+                  height={900}
+                  className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
+                  loading="lazy"
+                  decoding="async"
+                  data-testid="img-alertas-deportivas"
+                />
+                <figcaption className="text-xs text-muted-foreground mt-2 text-center italic">
+                  Recupera la estabilidad y movilidad de tu hombro con técnicas avanzadas de vendaje neuromuscular aplicadas por especialista en ortopedia deportiva
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
