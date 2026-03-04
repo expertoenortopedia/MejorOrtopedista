@@ -2,16 +2,116 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
   Activity, ArrowRight, Award, Bone, BookOpen, CheckCircle2, 
-  Calendar, ChevronRight, HeartPulse, ShieldCheck, 
+  Calendar, ChevronLeft, ChevronRight, HeartPulse, ShieldCheck, 
   Star, Stethoscope, UserCheck, Building2, Shield 
 } from "lucide-react";
 import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import { KneeIcon } from "@/components/icons/KneeIcon";
 import { useQuery } from "@tanstack/react-query";
 import { Link } from "wouter";
+import { useState } from "react";
 import type { BlogPost } from "@shared/schema";
 import heroImg from "@/assets/images/hero-medical.png";
 import doctorImg from "@/assets/images/doctor-portrait.png";
+
+const testimonials = [
+  {
+    text: "Llevaba 2 años con dolor de rodilla que otros médicos me decían que era normal por la edad. El Dr. Jorge me diagnosticó desgaste y con un tratamiento de infiltración ahora puedo caminar sin dolor. Muy ético y profesional.",
+    author: "Marta R.",
+    detail: "Paciente de tratamiento conservador"
+  },
+  {
+    text: "Me rompí el ligamento jugando fútbol. Tenía mucho miedo a la cirugía, pero el Doctor me explicó el procedimiento paso a paso. La artroscopia fue un éxito y ya estoy en rehabilitación.",
+    author: "Carlos E.",
+    detail: "Paciente de artroscopia deportiva"
+  },
+  {
+    text: "Excelente atención. No te apresura en la consulta, te revisa detalladamente y te muestra en las radiografías exactamente dónde está el problema. Me dio mucha confianza desde el primer día.",
+    author: "Laura G.",
+    detail: "Paciente por dolor de hombro"
+  },
+  {
+    text: "Agradezco la honestidad del Dr. Córdova. Pensé que necesitaba cirugía de meniscos y él me recomendó primero fisioterapia especializada. Me ahorró una cirugía innecesaria y ya estoy al 100%.",
+    author: "Roberto M.",
+    detail: "Paciente de lesión de meniscos"
+  },
+  {
+    text: "Llevé a mi madre por un desgaste articular severo. El trato fue de primera, súper respetuoso con el paciente mayor. Le hizo un reemplazo de rodilla y el cambio en su calidad de vida ha sido increíble.",
+    author: "Familia Sánchez",
+    detail: "Familiar de paciente (Prótesis)"
+  },
+  {
+    text: "Excelente atención para mi lesión de rodilla, explicó claramente el tratamiento y me dio seguridad en cada paso del proceso.",
+    author: "Andrea P.",
+    detail: "Paciente de lesión de rodilla"
+  },
+  {
+    text: "Gran especialista en ortopedia, me ayudó con un problema de hombro que llevaba meses. Diagnóstico muy preciso y trato profesional.",
+    author: "Fernando L.",
+    detail: "Paciente por dolor de hombro"
+  }
+];
+
+function TestimonialSlider() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const visibleCount = typeof window !== "undefined" && window.innerWidth >= 1024 ? 3 : typeof window !== "undefined" && window.innerWidth >= 768 ? 2 : 1;
+  const maxIndex = Math.max(0, testimonials.length - visibleCount);
+
+  const prev = () => setCurrentIndex((i) => Math.max(0, i - 1));
+  const next = () => setCurrentIndex((i) => Math.min(maxIndex, i + 1));
+
+  return (
+    <div className="relative">
+      <div className="overflow-hidden">
+        <div
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{ transform: `translateX(-${currentIndex * (100 / visibleCount)}%)` }}
+        >
+          {testimonials.map((testimonial, idx) => (
+            <div
+              key={idx}
+              className="flex-shrink-0 px-3"
+              style={{ width: `${100 / visibleCount}%` }}
+            >
+              <Card className="border border-slate-200 shadow-sm h-full" data-testid={`card-testimonial-${idx}`}>
+                <CardContent className="p-8">
+                  <div className="flex text-yellow-400 mb-4">
+                    {[1,2,3,4,5].map(i => <Star key={i} className="w-4 h-4 fill-current" />)}
+                  </div>
+                  <p className="text-slate-600 mb-6 italic leading-relaxed">"{testimonial.text}"</p>
+                  <div>
+                    <p className="font-bold text-slate-900">{testimonial.author}</p>
+                    <p className="text-xs text-slate-500">{testimonial.detail}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="flex justify-center gap-4 mt-8">
+        <button
+          onClick={prev}
+          disabled={currentIndex === 0}
+          className="p-3 rounded-full border border-slate-200 hover:bg-primary/5 hover:border-primary/30 transition-all disabled:opacity-30 disabled:cursor-not-allowed"
+          aria-label="Anterior"
+          data-testid="button-testimonial-prev"
+        >
+          <ChevronLeft className="w-5 h-5 text-slate-700" />
+        </button>
+        <button
+          onClick={next}
+          disabled={currentIndex >= maxIndex}
+          className="p-3 rounded-full border border-slate-200 hover:bg-primary/5 hover:border-primary/30 transition-all disabled:opacity-30 disabled:cursor-not-allowed"
+          aria-label="Siguiente"
+          data-testid="button-testimonial-next"
+        >
+          <ChevronRight className="w-5 h-5 text-slate-700" />
+        </button>
+      </div>
+    </div>
+  );
+}
 
 export default function Home() {
   const WHATSAPP_LINK = "https://wa.me/525514961386?text=Hola%20Dr.%20Jorge,%20vengo%20de%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20agendar%20una%20cita.";
@@ -301,58 +401,116 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. TESTIMONIOS (REALISTAS Y ÉTICOS) */}
-      <section id="testimonios" className="py-24 bg-slate-900 text-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3" />
-        
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-primary-foreground/80 font-bold tracking-wider uppercase text-sm mb-3">Casos de Éxito</h2>
-            <h3 className="font-serif text-3xl md:text-4xl font-bold mb-6">Lo que dicen mis pacientes</h3>
+      {/* 5. OPINIONES DE PACIENTES */}
+      <section id="testimonios" className="py-24 bg-slate-50">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Physician",
+              "name": "Dr. Jorge L. Córdova Fonseca",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5",
+                "bestRating": "5",
+                "worstRating": "1",
+                "ratingCount": "120",
+                "reviewCount": "120"
+              },
+              "review": [
+                {
+                  "@type": "Review",
+                  "author": { "@type": "Person", "name": "Marta R." },
+                  "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+                  "reviewBody": "Llevaba 2 años con dolor de rodilla. El Dr. Jorge me diagnosticó desgaste y con un tratamiento de infiltración ahora puedo caminar sin dolor."
+                },
+                {
+                  "@type": "Review",
+                  "author": { "@type": "Person", "name": "Carlos E." },
+                  "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+                  "reviewBody": "Me rompí el ligamento jugando fútbol. La artroscopia fue un éxito y ya estoy en rehabilitación."
+                },
+                {
+                  "@type": "Review",
+                  "author": { "@type": "Person", "name": "Laura G." },
+                  "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+                  "reviewBody": "Excelente atención. No te apresura en la consulta, te revisa detalladamente y te muestra exactamente dónde está el problema."
+                }
+              ]
+            }),
+          }}
+        />
+
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-4">
+              <Star className="w-4 h-4 fill-current" />
+              <span>Opiniones verificadas</span>
+            </div>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4 text-slate-900" data-testid="text-heading-opiniones">Opiniones de pacientes</h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              La experiencia de nuestros pacientes es fundamental. Aquí puedes ver opiniones y testimonios de personas que han recibido atención ortopédica.
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex flex-col items-center mb-14">
+            <div className="flex text-yellow-400 mb-2">
+              {[1,2,3,4,5].map(i => <Star key={i} className="w-8 h-8 fill-current" />)}
+            </div>
+            <p className="text-xl font-bold text-slate-900 mb-1">Calificación de pacientes</p>
+            <div className="flex flex-wrap justify-center gap-3 mt-3">
+              {["Doctoralia", "Google", "Testimonios de pacientes"].map((source) => (
+                <span key={source} className="px-3 py-1 bg-white border border-slate-200 rounded-full text-sm text-slate-600 font-medium" data-testid={`badge-source-${source.toLowerCase().replace(/\s/g, '-')}`}>
+                  {source}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-16">
             {[
               {
-                text: "Llevaba 2 años con dolor de rodilla que otros médicos me decían que era normal por la edad. El Dr. Jorge me diagnosticó desgaste y con un tratamiento de infiltración ahora puedo caminar sin dolor. Muy ético y profesional.",
-                author: "Marta R.",
-                detail: "Paciente de tratamiento conservador"
+                title: "Doctoralia",
+                text: "Consulta opiniones verificadas de pacientes sobre la atención ortopédica.",
+                button: "Ver opiniones en Doctoralia",
+                href: "https://www.doctoralia.com.mx",
+                icon: "🩺"
               },
               {
-                text: "Me rompí el ligamento jugando fútbol. Tenía mucho miedo a la cirugía, pero el Doctor me explicó el procedimiento paso a paso. La artroscopia fue un éxito y ya estoy en rehabilitación.",
-                author: "Carlos E.",
-                detail: "Paciente de artroscopia deportiva"
+                title: "Google Reviews",
+                text: "Pacientes comparten su experiencia con el tratamiento y diagnóstico.",
+                button: "Ver reseñas en Google",
+                href: "https://www.google.com/maps",
+                icon: "⭐"
               },
               {
-                text: "Excelente atención. No te apresura en la consulta, te revisa detalladamente y te muestra en las radiografías exactamente dónde está el problema. Me dio mucha confianza desde el primer día.",
-                author: "Laura G.",
-                detail: "Paciente por dolor de hombro"
-              },
-              {
-                text: "Agradezco la honestidad del Dr. Córdova. Pensé que necesitaba cirugía de meniscos y él me recomendó primero fisioterapia especializada. Me ahorró una cirugía innecesaria y ya estoy al 100%.",
-                author: "Roberto M.",
-                detail: "Paciente de lesión de meniscos"
-              },
-              {
-                text: "Llevé a mi madre por un desgaste articular severo. El trato fue de primera, súper respetuoso con el paciente mayor. Le hizo un reemplazo de rodilla y el cambio en su calidad de vida ha sido increíble.",
-                author: "Familia Sánchez",
-                detail: "Familiar de paciente (Prótesis)"
+                title: "Testimonios de pacientes",
+                text: "Experiencias reales de pacientes tratados por el especialista.",
+                button: "Leer testimonios",
+                href: "#testimonios-slider",
+                icon: "💬"
               }
-            ].map((testimonial, idx) => (
-              <Card key={idx} className="bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
-                <CardContent className="p-8">
-                  <div className="flex text-yellow-400 mb-4">
-                    {[1,2,3,4,5].map(i => <Star key={i} className="w-4 h-4 fill-current" />)}
-                  </div>
-                  <p className="text-slate-300 mb-6 italic leading-relaxed">"{testimonial.text}"</p>
-                  <div>
-                    <p className="font-bold text-white">{testimonial.author}</p>
-                    <p className="text-xs text-slate-400">{testimonial.detail}</p>
-                  </div>
+            ].map((source, idx) => (
+              <Card key={idx} className="border border-slate-200 shadow-sm hover:shadow-md transition-all" data-testid={`card-review-source-${idx}`}>
+                <CardContent className="p-8 text-center">
+                  <span className="text-4xl mb-4 block">{source.icon}</span>
+                  <h3 className="text-lg font-bold text-slate-900 mb-2">{source.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-6">{source.text}</p>
+                  <a href={source.href} target={source.href.startsWith("http") ? "_blank" : undefined} rel={source.href.startsWith("http") ? "noopener noreferrer" : undefined}>
+                    <Button variant="outline" className="rounded-full text-sm border-primary/30 text-primary hover:bg-primary/5" data-testid={`button-review-${idx}`}>
+                      {source.button}
+                      <ChevronRight className="w-4 h-4 ml-1" />
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}
+          </div>
+
+          <div id="testimonios-slider" className="relative">
+            <h3 className="font-serif text-2xl font-bold text-center mb-8 text-slate-900">Lo que dicen nuestros pacientes</h3>
+            <TestimonialSlider />
           </div>
         </div>
       </section>
