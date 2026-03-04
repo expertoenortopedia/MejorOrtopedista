@@ -1,8 +1,15 @@
 import { useEffect } from "react";
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
-import { CheckCircle2, AlertTriangle, Stethoscope, Heart, Shield, Award, UserCheck, Search, Activity } from "lucide-react";
+import { CheckCircle2, AlertTriangle, Stethoscope, Heart, Shield, Award, UserCheck, Search, Activity, HelpCircle } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const WHATSAPP_LINK = "https://wa.me/525514961386?text=Hola%20Dr.%20Jorge,%20vengo%20de%20su%20p%C3%A1gina%20de%20lesiones%20deportivas%20y%20me%20gustar%C3%ADa%20agendar%20una%20cita.";
 
@@ -43,10 +50,10 @@ const tratamientos = [
 
 export default function LesionesDeportivas() {
   useEffect(() => {
-    document.title = "Lesiones Deportivas en Cuautitlán Izcalli | Ortopedista Especialista";
+    document.title = "Lesiones Deportivas Tratamiento | Ortopedista en Cuautitlán Izcalli | Dr. Jorge L. Córdova";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Tratamiento de lesiones deportivas en Cuautitlán Izcalli. Conoce las lesiones más comunes, síntomas y cuándo acudir al ortopedista especialista.");
+      metaDesc.setAttribute("content", "Tratamiento de lesiones deportivas en Cuautitlán Izcalli. Especialista en artroscopia de rodilla, ligamento cruzado anterior y lesión de menisco. ¡Recupera tu movilidad!");
     }
   }, []);
 
@@ -91,16 +98,16 @@ export default function LesionesDeportivas() {
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
                 <Activity className="w-4 h-4" />
-                Ortopedista Especialista en Lesiones Deportivas
+                Ortopedista en Cuautitlán Izcalli
               </div>
               <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-slate-900">
                 Lesiones Deportivas: síntomas, tratamiento y atención especializada
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Las lesiones deportivas son daños que ocurren en músculos, tendones, ligamentos, huesos o articulaciones durante la práctica de actividad física o deportiva. Pueden presentarse por un impacto repentino, un movimiento brusco, falta de calentamiento o por el uso repetitivo de una articulación.
+                Las lesiones deportivas son daños que ocurren en músculos, tendones, ligamentos, huesos o articulaciones durante la práctica de actividad física o deportiva. Como <strong>ortopedista en Cuautitlán Izcalli</strong>, el Dr. Jorge Córdova se especializa en el diagnóstico y tratamiento de estas afecciones, permitiendo a los pacientes retomar sus actividades favoritas con seguridad.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Cualquier persona que practique deporte —desde atletas profesionales hasta quienes hacen ejercicio recreativo— puede sufrir una lesión deportiva. Un diagnóstico oportuno y un tratamiento adecuado son esenciales para una recuperación completa y un regreso seguro a la actividad.
+                Cualquier persona que practique deporte —desde atletas profesionales hasta quienes hacen ejercicio recreativo— puede sufrir una lesión. Un diagnóstico oportuno por un <strong>traumatólogo en Cuautitlán Izcalli</strong> es esencial para evitar complicaciones a largo plazo y asegurar una recuperación completa de la función articular y muscular.
               </p>
               <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" data-testid="button-whatsapp-hero-deportivas">
                 <Button className="bg-green-600 hover:bg-green-700 text-white rounded-full px-8 py-6 text-lg shadow-lg hover:-translate-y-1 transition-transform mt-2">
@@ -131,10 +138,10 @@ export default function LesionesDeportivas() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-14">
             <h2 className="font-serif text-2xl md:text-3xl font-bold mb-4 text-slate-900">
-              Lesiones deportivas más comunes
+              Tipos de lesiones deportivas y su manejo
             </h2>
             <p className="text-muted-foreground leading-relaxed text-lg">
-              Estas son las lesiones que vemos con mayor frecuencia en pacientes deportistas. Cada una requiere un enfoque de diagnóstico y tratamiento específico.
+              Estas son las lesiones que vemos con mayor frecuencia en pacientes deportistas. Cada una requiere un enfoque de diagnóstico y tratamiento específico por un <strong>ortopedista en Cuautitlán Izcalli</strong> con experiencia en medicina del deporte.
             </p>
           </div>
           <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -148,13 +155,55 @@ export default function LesionesDeportivas() {
                 </Card>
               ))}
             </div>
-            <div>
+            <div className="space-y-6">
               <img
                 src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80"
                 alt="Deportista con lesión deportiva común de rodilla o tobillo"
                 className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
                 loading="lazy"
                 data-testid="img-lesiones-comunes"
+              />
+              <div className="prose prose-slate max-w-none text-muted-foreground">
+                <p>
+                  El espectro de las lesiones deportivas es amplio, abarcando desde traumatismos agudos hasta problemas por sobreuso. La <strong>lesión de menisco tratamiento</strong> suele variar dependiendo de la zona del desgarro y la edad del paciente, mientras que la <strong>ligamento cruzado anterior cirugía</strong> es frecuentemente necesaria en pacientes jóvenes y activos para restaurar la estabilidad rotacional de la rodilla.
+                </p>
+                <p>
+                  En nuestra clínica, utilizamos la <strong>artroscopia de rodilla</strong> como una herramienta fundamental tanto para el diagnóstico preciso como para el tratamiento quirúrgico de mínima invasión. Este procedimiento permite reparar estructuras dañadas con incisiones mínimas, lo que se traduce en menos dolor postoperatorio y una recuperación más acelerada.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECCIÓN ADICIONAL — DIAGNÓSTICO */}
+      <section className="py-20 bg-slate-50" data-testid="section-diagnostico-deportivas">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="font-serif text-2xl md:text-3xl font-bold mb-6 text-slate-900">
+                Diagnóstico por ortopedista especialista
+              </h2>
+              <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
+                <p>
+                  Un diagnóstico preciso es el primer paso crítico hacia una recuperación exitosa. El Dr. Jorge Córdova, reconocido <strong>traumatólogo en Cuautitlán Izcalli</strong>, realiza una evaluación exhaustiva que incluye:
+                </p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li><strong>Historia clínica detallada:</strong> Entender el mecanismo de la lesión y los síntomas previos.</li>
+                  <li><strong>Exploración física exhaustiva:</strong> Pruebas específicas de estabilidad articular y fuerza muscular.</li>
+                  <li><strong>Estudios de imagen:</strong> Interpretación experta de radiografías, ultrasonido o resonancia magnética para confirmar el alcance del daño.</li>
+                </ul>
+                <p>
+                  Contar con un <strong>especialista en rodilla Cuautitlán Izcalli</strong> garantiza que lesiones complejas, como desgarros multiligamentarios o lesiones condrales, no pasen desapercibidas y reciban la atención adecuada desde el primer momento.
+                </p>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80"
+                alt="Diagnóstico de lesiones deportivas con tecnología avanzada"
+                className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
+                loading="lazy"
               />
             </div>
           </div>
@@ -256,10 +305,10 @@ export default function LesionesDeportivas() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-14">
             <h2 className="font-serif text-2xl md:text-3xl font-bold mb-4 text-slate-900">
-              Tratamiento especializado en lesiones deportivas
+              Tratamiento conservador y quirúrgico (artroscopia)
             </h2>
             <p className="text-muted-foreground leading-relaxed text-lg">
-              Cada lesión deportiva es diferente. El Dr. Córdova evalúa tu caso de forma individual para ofrecerte el tratamiento más efectivo y seguro para tu recuperación.
+              Cada lesión deportiva es diferente. El Dr. Córdova evalúa tu caso de forma individual para ofrecerte el tratamiento más efectivo y seguro para tu recuperación. Como <strong>ortopedista en Cuautitlán Izcalli</strong>, priorizamos opciones que te permitan volver a tu nivel previo de actividad.
             </p>
           </div>
           <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -274,6 +323,14 @@ export default function LesionesDeportivas() {
               ))}
             </div>
             <div className="space-y-6">
+              <div className="prose prose-slate max-w-none text-muted-foreground">
+                <p>
+                  El <strong>tratamiento conservador</strong> es nuestra primera línea de acción en muchas lesiones. Este incluye el protocolo RICE (reposo, hielo, compresión, elevación), medicación antiinflamatoria y una rehabilitación física personalizada. Sin embargo, en deportistas de alto rendimiento o lesiones estructurales graves, el tratamiento quirúrgico puede ser necesario.
+                </p>
+                <p>
+                  La <strong>artroscopia</strong> es la técnica de elección para la mayoría de las cirugías deportivas. Ya sea para una <strong>reconstrucción de ligamento cruzado anterior</strong> o una reparación de menisco, este método permite una visualización directa y precisa de la articulación con un daño mínimo a los tejidos circundantes.
+                </p>
+              </div>
               <figure>
                 <img
                   src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772567058/ChatGPT_Image_4_mar_2026_12_24_09_p.m._bwyzpg.png"
@@ -290,10 +347,43 @@ export default function LesionesDeportivas() {
                   ¿Dolor de rodilla al hacer deporte? Una valoración ortopédica oportuna permite un diagnóstico preciso y un plan de tratamiento personalizado
                 </figcaption>
               </figure>
-              <div className="bg-primary/5 border border-primary/10 rounded-xl p-6">
-                <p className="text-slate-700 text-base leading-relaxed italic">
-                  "Trabajamos con rehabilitadores profesionales para lograr una recuperación segura, completa y un regreso adecuado a las actividades deportivas."
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECCIÓN ADICIONAL — RECUPERACIÓN */}
+      <section className="py-20 bg-white" data-testid="section-recuperacion-deportivas">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <img
+                src="https://images.unsplash.com/photo-1597452485669-2c7bb5fef90d?w=800&q=80"
+                alt="Recuperación y regreso al deporte tras tratamiento ortopédico"
+                className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
+                loading="lazy"
+              />
+            </div>
+            <div className="order-1 lg:order-2">
+              <h2 className="font-serif text-2xl md:text-3xl font-bold mb-6 text-slate-900">
+                Recuperación y regreso al deporte
+              </h2>
+              <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
+                <p>
+                  El éxito de cualquier tratamiento, especialmente después de una <strong>cirugía de ligamento cruzado</strong> o una reparación de menisco, depende en gran medida de la fase de rehabilitación. Nuestro objetivo no es solo que dejes de sentir dolor, sino que recuperes la confianza en tu cuerpo para volver a competir.
                 </p>
+                <p>
+                  El proceso de regreso al deporte (Return to Play) se realiza de forma escalonada, supervisando la fuerza, el equilibrio y la técnica deportiva. Trabajar con un <strong>ortopedista en Cuautitlán Izcalli</strong> comprometido con tu seguimiento asegura que no regreses antes de tiempo, minimizando el riesgo de una nueva lesión.
+                </p>
+                <div className="flex flex-wrap gap-3 mt-6">
+                  <Link href="/dolor-de-rodilla-cuautitlan-izcalli" className="text-primary hover:underline font-medium">Dolor de Rodilla</Link>
+                  <span className="text-slate-300">|</span>
+                  <Link href="/lesion-menisco-cuautitlan-izcalli" className="text-primary hover:underline font-medium">Lesión de Menisco</Link>
+                  <span className="text-slate-300">|</span>
+                  <Link href="/ligamento-cruzado-anterior-cuautitlan-izcalli" className="text-primary hover:underline font-medium">Ligamento Cruzado</Link>
+                  <span className="text-slate-300">|</span>
+                  <Link href="/dolor-hombro-manguito-rotador-cuautitlan-izcalli" className="text-primary hover:underline font-medium">Dolor de Hombro</Link>
+                </div>
               </div>
             </div>
           </div>
@@ -328,6 +418,52 @@ export default function LesionesDeportivas() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SECCIÓN FAQ */}
+      <section className="py-20 bg-slate-50" data-testid="section-faq-deportivas">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-12">
+              <HelpCircle className="w-12 h-12 text-primary mx-auto mb-4" />
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-slate-900">
+                Preguntas frecuentes sobre lesiones deportivas
+              </h2>
+            </div>
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="text-lg font-semibold">¿Cuánto tiempo tarda en sanar una lesión deportiva?</AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-base">
+                  El tiempo de recuperación varía según el tipo y la gravedad de la lesión. Un esguince leve puede tardar de 1 a 3 semanas, mientras que una rotura de ligamento que requiere cirugía puede llevar de 6 a 9 meses de rehabilitación intensa. Un <strong>ortopedista en Cuautitlán Izcalli</strong> podrá darte un pronóstico exacto tras tu valoración.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger className="text-lg font-semibold">¿Cuándo es necesaria una artroscopia de rodilla?</AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-base">
+                  La artroscopia se recomienda cuando hay daños estructurales que no mejoran con tratamiento conservador, como desgarros de menisco que bloquean la articulación, roturas de ligamento cruzado o fragmentos sueltos de cartílago. Es un procedimiento de mínima invasión realizado por el <strong>traumatólogo en Cuautitlán Izcalli</strong>.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger className="text-lg font-semibold">¿Puedo volver a hacer deporte después de una cirugía de ligamento cruzado?</AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-base">
+                  Sí, la gran mayoría de los pacientes regresan a sus actividades deportivas previas. El éxito depende de una técnica quirúrgica precisa (<strong>ligamento cruzado anterior cirugía</strong>) y un compromiso estricto con el programa de rehabilitación postoperatoria.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger className="text-lg font-semibold">¿Qué debo hacer inmediatamente después de lesionarme haciendo ejercicio?</AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-base">
+                  Se recomienda seguir el protocolo RICE: Reposo, Hielo (15-20 min varias veces al día), Compresión (vendaje no muy apretado) y Elevación. Evita automedicarte y agenda una cita con un <strong>especialista en lesiones deportivas</strong> si el dolor es intenso o hay incapacidad para apoyar.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-5">
+                <AccordionTrigger className="text-lg font-semibold">¿Cómo puedo prevenir lesiones deportivas recurrentes?</AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-base">
+                  La prevención incluye un calentamiento adecuado, el uso de equipo correcto, mejorar la técnica deportiva y, sobre todo, fortalecer los grupos musculares que estabilizan las articulaciones. Una valoración biomecánica por un <strong>ortopedista especialista</strong> puede identificar factores de riesgo.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </section>

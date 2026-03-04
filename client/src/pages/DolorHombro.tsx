@@ -1,8 +1,15 @@
 import { useEffect } from "react";
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
-import { CheckCircle2, AlertTriangle, Stethoscope, Heart, Shield, Award, UserCheck, Search } from "lucide-react";
+import { CheckCircle2, AlertTriangle, Stethoscope, Heart, Shield, Award, UserCheck, Search, HelpCircle, ChevronDown } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const WHATSAPP_LINK = "https://wa.me/525514961386?text=Hola%20Dr.%20Jorge,%20vengo%20de%20su%20p%C3%A1gina%20de%20dolor%20de%20hombro%20y%20me%20gustar%C3%ADa%20agendar%20una%20cita.";
 
@@ -31,12 +38,31 @@ const tratamientos = [
   { title: "Cirugía artroscópica", desc: "En casos que lo requieran, reparación mínimamente invasiva del manguito rotador para restaurar la función." },
 ];
 
+const faqs = [
+  {
+    question: "¿Cuánto tiempo tarda en sanar una lesión del manguito rotador?",
+    answer: "El tiempo de recuperación varía según la gravedad. Una inflamación leve (tendinitis) puede mejorar en 4 a 6 semanas con fisioterapia. Un desgarro completo que requiere cirugía puede necesitar de 4 a 6 meses de rehabilitación postoperatoria para recuperar la fuerza total."
+  },
+  {
+    question: "¿Es necesaria la cirugía para todos los desgarros del manguito rotador?",
+    answer: "No siempre. Muchos pacientes mejoran significativamente con tratamiento conservador, que incluye reposo, medicamentos e infiltraciones. Sin embargo, en pacientes jóvenes, deportistas o ante desgarros completos y debilidad severa, la cirugía suele ser la mejor opción para evitar daños permanentes."
+  },
+  {
+    question: "¿Qué pasa si no me opero una luxación de hombro?",
+    answer: "Una luxación de hombro mal tratada aumenta el riesgo de luxaciones recurrentes (inestabilidad crónica). Cada vez que el hombro se sale de su lugar, se daña el cartílago y los ligamentos, lo que puede llevar a una artrosis temprana de la articulación."
+  },
+  {
+    question: "¿Qué actividades debo evitar si tengo dolor de hombro?",
+    answer: "Debe evitar levantar objetos pesados, realizar movimientos por encima de la cabeza (como alcanzar estantes altos) y deportes de impacto o lanzamiento hasta ser evaluado por un traumatólogo en Cuautitlán Izcalli."
+  }
+];
+
 export default function DolorHombro() {
   useEffect(() => {
-    document.title = "Dolor de Hombro y Manguito Rotador en Cuautitlán Izcalli | Ortopedista Especialista";
+    document.title = "Dolor de Hombro y Manguito Rotador | Ortopedista en Cuautitlán Izcalli | Dr. Jorge L. Córdova";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Tratamiento del dolor de hombro y lesiones del manguito rotador en Cuautitlán Izcalli. Conoce síntomas y cuándo acudir al ortopedista especialista.");
+      metaDesc.setAttribute("content", "Especialista en dolor de hombro ortopedista y manguito rotador tratamiento en Cuautitlán Izcalli. Atención experta en luxación de hombro tratamiento y lesiones articulares.");
     }
   }, []);
 
@@ -81,16 +107,16 @@ export default function DolorHombro() {
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
                 <Stethoscope className="w-4 h-4" />
-                Ortopedista Especialista en Hombro
+                Ortopedista en Cuautitlán Izcalli
               </div>
               <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-slate-900">
-                Dolor de Hombro y Lesión del Manguito Rotador: síntomas y tratamiento
+                Dolor de Hombro y Lesión del Manguito Rotador: Tratamiento Especializado
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                El manguito rotador es un grupo de cuatro músculos y tendones que rodean la articulación del hombro. Su función es mantener la cabeza del húmero (hueso del brazo) firmemente en su lugar y permitir los movimientos de rotación y elevación del brazo.
+                Si buscas un <strong>dolor de hombro ortopedista</strong> con experiencia, el Dr. Jorge Córdova ofrece soluciones avanzadas para recuperar tu movilidad. El manguito rotador es fundamental para la estabilidad y el movimiento del brazo, y su lesión requiere un diagnóstico preciso.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Cuando estos tendones se inflaman, se desgarran o se desgastan, aparece dolor que puede volverse muy limitante. Las causas más comunes son el uso repetitivo del brazo, caídas, levantamiento de objetos pesados y el desgaste natural con la edad. Sin tratamiento, la lesión puede empeorar progresivamente.
+                Como <strong>traumatólogo en Cuautitlán Izcalli</strong>, el Dr. Córdova se especializa en el abordaje integral de patologías del hombro, utilizando técnicas de vanguardia como la artroscopia para garantizar una recuperación óptima y menos dolorosa.
               </p>
               <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" data-testid="button-whatsapp-hero-hombro">
                 <Button className="bg-green-600 hover:bg-green-700 text-white rounded-full px-8 py-6 text-lg shadow-lg hover:-translate-y-1 transition-transform mt-2">
@@ -125,16 +151,47 @@ export default function DolorHombro() {
         </div>
       </section>
 
+      {/* SECCIÓN — CONTENIDO EXPANDIDO 1 */}
+      <section className="py-16 bg-white border-b border-slate-100">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-4xl mx-auto space-y-8">
+            <div>
+              <h2 className="font-serif text-3xl font-bold mb-6 text-slate-900">¿Qué es el manguito rotador y por qué causa tanto dolor?</h2>
+              <div className="prose prose-slate max-w-none text-muted-foreground leading-relaxed space-y-4">
+                <p>
+                  El manguito rotador es una estructura anatómica compleja compuesta por cuatro tendones: el supraespinoso, infraespinoso, redondo menor y subescapular. Estos tendones trabajan en conjunto para proporcionar fuerza a los movimientos del brazo y mantener la articulación glenohumeral estable. El <strong>manguito rotador tratamiento</strong> depende directamente del tipo de daño que estos tejidos hayan sufrido.
+                </p>
+                <p>
+                  El dolor de hombro suele originarse por un proceso inflamatorio (tendinitis) o por un pinzamiento (síndrome de pinzamiento subacromial). Con el tiempo, si no se recibe atención por un <strong>ortopedista en Cuautitlán Izcalli</strong>, estas microlesiones pueden progresar hasta convertirse en desgarros parciales o totales. El dolor característico suele ser sordo y profundo, intensificándose al intentar dormir de lado o al realizar movimientos por encima de la cabeza.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h2 className="font-serif text-3xl font-bold mb-6 text-slate-900">Luxación de hombro: Tratamiento y prevención de inestabilidad</h2>
+              <div className="prose prose-slate max-w-none text-muted-foreground leading-relaxed space-y-4">
+                <p>
+                  La luxación ocurre cuando la cabeza del húmero se sale de su cavidad en el omóplato. Este evento suele ser traumático y extremadamente doloroso. El <strong>luxación de hombro tratamiento</strong> inicial consiste en la reducción de la articulación, pero el manejo a largo plazo es crucial para evitar que el hombro se vuelva "inestable".
+                </p>
+                <p>
+                  Cuando un paciente sufre luxaciones repetidas, los ligamentos y el rodete (labrum) quedan debilitados. Un <strong>traumatólogo en Cuautitlán Izcalli</strong> evaluará si es necesario un procedimiento quirúrgico para reestabilizar la articulación y prevenir el desgaste prematuro del cartílago, lo cual podría derivar en artrosis en el futuro.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SECCIÓN 2 — SÍNTOMAS */}
-      <section className="py-20 bg-white" data-testid="section-sintomas-hombro">
+      <section className="py-20 bg-slate-50" data-testid="section-sintomas-hombro">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="font-serif text-2xl md:text-3xl font-bold mb-4 text-slate-900">
-                Síntomas de la lesión del manguito rotador
+                Síntomas comunes de las lesiones de hombro
               </h2>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                Los síntomas del manguito rotador pueden aparecer de forma repentina después de una lesión, o desarrollarse gradualmente por desgaste. Si reconoces varios de estos síntomas, es importante buscar atención especializada.
+                Reconocer los signos tempranos de una lesión puede marcar la diferencia en el pronóstico. Si experimentas cualquiera de los siguientes, es recomendable una valoración por un especialista en <strong>dolor de hombro ortopedista</strong>.
               </p>
               <div className="space-y-4">
                 {sintomas.map((sintoma, idx) => (
@@ -167,6 +224,26 @@ export default function DolorHombro() {
         </div>
       </section>
 
+      {/* SECCIÓN — CONTENIDO EXPANDIDO 2 */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+            <div>
+              <h2 className="font-serif text-2xl font-bold mb-4 text-slate-900">Diagnóstico especializado</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Para determinar el mejor <strong>manguito rotador tratamiento</strong>, el Dr. Jorge Córdova realiza una evaluación clínica exhaustiva. Esto incluye pruebas de fuerza, rangos de movilidad y maniobras específicas que orientan el diagnóstico. En muchos casos, se complementa con estudios como ultrasonido o resonancia magnética para observar con detalle la extensión de la lesión y planificar el abordaje terapéutico más efectivo en Cuautitlán Izcalli.
+              </p>
+            </div>
+            <div>
+              <h2 className="font-serif text-2xl font-bold mb-4 text-slate-900">Tratamiento Conservador</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                No todas las lesiones requieren cirugía. Un enfoque conservador bien guiado por un <strong>ortopedista en Cuautitlán Izcalli</strong> puede incluir terapia física especializada, modificación de actividades, fármacos antiinflamatorios y técnicas avanzadas de infiltración. Estas opciones buscan reducir la inflamación y permitir que los tejidos cicatricen o se fortalezcan para compensar el daño existente.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SECCIÓN 3 — CUÁNDO ACUDIR AL ESPECIALISTA */}
       <section className="py-20 bg-slate-50" data-testid="section-alertas-hombro">
         <div className="container mx-auto px-4 md:px-6">
@@ -194,7 +271,7 @@ export default function DolorHombro() {
                 ¿Cuándo acudir con un especialista en hombro?
               </h2>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                Una lesión del manguito rotador no tratada puede provocar debilidad permanente, pérdida de movilidad y dolor crónico. La atención temprana es clave para evitar complicaciones. Busca atención si presentas:
+                Ignorar un dolor persistente puede llevar a la atrofia muscular y rigidez articular (hombro congelado). El Dr. Córdova, <strong>traumatólogo en Cuautitlán Izcalli</strong>, recomienda consultar ante:
               </p>
               <div className="space-y-4">
                 {alertas.map((alerta, idx) => (
@@ -215,15 +292,38 @@ export default function DolorHombro() {
         </div>
       </section>
 
+      {/* SECCIÓN — CONTENIDO EXPANDIDO 3 (CIRUGÍA Y RECUPERACIÓN) */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-4xl mx-auto space-y-10">
+            <div>
+              <h2 className="font-serif text-3xl font-bold mb-6 text-slate-900">Tratamiento Quirúrgico: Artroscopia de Hombro</h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Cuando el <strong>manguito rotador tratamiento</strong> conservador no es suficiente, la cirugía artroscópica representa la mejor opción. Es una técnica mínimamente invasiva donde, a través de pequeñas incisiones, el cirujano utiliza una cámara y herramientas diminutas para reparar los tendones desgarrados o fijar el labrum después de una <strong>luxación de hombro tratamiento</strong>.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Las ventajas de la artroscopia incluyen menos dolor postoperatorio, menor riesgo de infección y una recuperación estética y funcional superior a la cirugía abierta tradicional. Como <strong>traumatólogo en Cuautitlán Izcalli</strong>, el Dr. Jorge Córdova ha perfeccionado esta técnica para devolver a los pacientes su calidad de vida en el menor tiempo posible.
+              </p>
+            </div>
+            <div>
+              <h2 className="font-serif text-3xl font-bold mb-6 text-slate-900">Proceso de Recuperación y Rehabilitación</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                La recuperación es una fase tan importante como el diagnóstico. Después de un tratamiento para dolor de hombro, es vital seguir un programa de rehabilitación. Este se divide en etapas: protección inicial del tejido reparado, recuperación paulatina de la movilidad pasiva y, finalmente, ejercicios de fortalecimiento activo. El acompañamiento constante de tu <strong>ortopedista en Cuautitlán Izcalli</strong> asegura que cada etapa se cumpla sin riesgos de recaída.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SECCIÓN 4 — TRATAMIENTOS */}
-      <section className="py-20 bg-white" data-testid="section-tratamientos-hombro">
+      <section className="py-20 bg-slate-50" data-testid="section-tratamientos-hombro">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-14">
             <h2 className="font-serif text-2xl md:text-3xl font-bold mb-4 text-slate-900">
-              Tratamientos disponibles para el dolor de hombro
+              Opciones de tratamiento en Cuautitlán Izcalli
             </h2>
             <p className="text-muted-foreground leading-relaxed text-lg">
-              El tratamiento se adapta al tipo de lesión, su severidad y las necesidades de cada paciente. Siempre buscamos la opción menos invasiva que ofrezca los mejores resultados.
+              El abordaje terapéutico es personalizado. Buscamos restaurar la función del hombro con la técnica más adecuada para tu caso particular.
             </p>
           </div>
           <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -259,6 +359,39 @@ export default function DolorHombro() {
         </div>
       </section>
 
+      {/* SECCIÓN — ENLACES INTERNOS */}
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="bg-primary/5 rounded-2xl p-8 md:p-12 border border-primary/10">
+            <h2 className="font-serif text-2xl font-bold mb-6 text-slate-900 text-center">Otros servicios relacionados</h2>
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <Link href="/lesiones-deportivas-cuautitlan-izcalli">
+                <a className="group flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all border border-transparent hover:border-primary/20">
+                  <div className="p-3 bg-primary/10 rounded-lg mr-4 group-hover:bg-primary group-hover:text-white transition-colors text-primary">
+                    <Award className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-slate-900">Lesiones Deportivas</h3>
+                    <p className="text-xs text-muted-foreground">Especialista en medicina del deporte</p>
+                  </div>
+                </a>
+              </Link>
+              <Link href="/artrosis-rodilla-cadera-cuautitlan-izcalli">
+                <a className="group flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all border border-transparent hover:border-primary/20">
+                  <div className="p-3 bg-primary/10 rounded-lg mr-4 group-hover:bg-primary group-hover:text-white transition-colors text-primary">
+                    <UserCheck className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-slate-900">Artrosis y Desgaste</h3>
+                    <p className="text-xs text-muted-foreground">Tratamiento de desgaste articular</p>
+                  </div>
+                </a>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SECCIÓN 5 — ESPECIALISTA */}
       <section className="py-20 bg-slate-50" data-testid="section-doctor-hombro">
         <div className="container mx-auto px-4 md:px-6">
@@ -287,6 +420,32 @@ export default function DolorHombro() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SECCIÓN FAQ */}
+      <section className="py-20 bg-white" data-testid="section-faq-hombro">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-12">
+              <HelpCircle className="w-12 h-12 text-primary mx-auto mb-4" />
+              <h2 className="font-serif text-3xl font-bold text-slate-900 mb-4">Preguntas Frecuentes sobre Lesiones de Hombro</h2>
+              <p className="text-muted-foreground">Resolvemos tus dudas sobre el manguito rotador y otros problemas de hombro.</p>
+            </div>
+            
+            <Accordion type="single" collapsible className="w-full">
+              {faqs.map((faq, index) => (
+                <AccordionItem key={index} value={`item-${index}`} data-testid={`faq-item-${index}`}>
+                  <AccordionTrigger className="text-left font-bold text-slate-800 text-lg hover:no-underline">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground text-base leading-relaxed">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </div>
       </section>
