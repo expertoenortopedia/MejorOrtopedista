@@ -43,7 +43,7 @@ export function Footer() {
               <li><a href="#tratamientos" className="text-sm hover:text-white transition-colors">Tratamientos</a></li>
               <li><a href="#testimonios" className="text-sm hover:text-white transition-colors">Testimonios</a></li>
               <li><a href="#doctor" className="text-sm hover:text-white transition-colors">Sobre el Doctor</a></li>
-              <li><a href="https://www.expertoenortopedia.com/blank" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-white transition-colors" data-testid="link-triptico">Obtén tu tríptico</a></li>
+              <li><a href="https://www.expertoenortopedia.com/blank" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-white transition-colors" data-testid="link-triptico">Info para pacientes</a></li>
             </ul>
           </div>
 
