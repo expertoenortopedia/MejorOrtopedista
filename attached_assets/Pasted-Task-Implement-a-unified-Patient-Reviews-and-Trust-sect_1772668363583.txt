@@ -1,0 +1,91 @@
+Task: Implement a unified "Patient Reviews and Trust" section on the orthopedic website.
+
+Context:
+This is a medical website for Dr. Jorge L. Córdova, orthopedic surgeon. The goal is to increase patient trust and appointment conversions by displaying reviews and testimonials from multiple sources.
+
+Requirements:
+
+1. Create a new section titled:
+   "Opiniones de pacientes"
+
+2. Add a short introduction text:
+   "La experiencia de nuestros pacientes es fundamental. Aquí puedes ver opiniones y testimonios de personas que han recibido atención ortopédica."
+
+3. Add a rating summary block that visually highlights trust:
+
+Example layout:
+
+★★★★★
+Calificación de pacientes
+
+Reviews sources:
+Doctoralia
+Google
+Testimonios de pacientes
+
+4. Add three columns or cards showing review sources:
+
+Card 1:
+Doctoralia Reviews
+
+Text:
+"Consulta opiniones verificadas de pacientes sobre la atención ortopédica."
+
+Button:
+"Ver opiniones en Doctoralia"
+
+Card 2:
+Google Reviews
+
+Text:
+"Pacientes comparten su experiencia con el tratamiento y diagnóstico."
+
+Button:
+"Ver reseñas en Google"
+
+Card 3:
+Patient Testimonials
+
+Text:
+"Experiencias reales de pacientes tratados por el especialista."
+
+Button:
+"Leer testimonios"
+
+5. Below this, create a testimonial slider with 3–5 patient testimonials.
+
+Example testimonial format:
+
+Name:
+Paciente
+
+Rating:
+★★★★★
+
+Text examples:
+
+"Excelente atención para mi lesión de rodilla, explicó claramente el tratamiento."
+
+"Gran especialista en ortopedia, me ayudó con un problema de hombro."
+
+"Diagnóstico muy preciso y trato profesional."
+
+6. Design requirements:
+
+* Medical professional style
+* White or light background
+* Card layout for review sources
+* Slider component for testimonials
+* Mobile responsive
+* Soft shadow and rounded cards
+
+7. Placement:
+
+Place this section on the homepage after the doctor profile section or after treatments.
+
+8. SEO enhancement:
+
+Add structured data for "Review" and "Physician" schema markup to improve medical credibility in search engines.
+
+Goal:
+Increase patient trust, improve perceived authority, and encourage appointment booking.
