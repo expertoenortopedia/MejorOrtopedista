@@ -53,6 +53,11 @@ export function Footer() {
               La información contenida en este sitio web es exclusivamente de carácter informativo y no sustituye la consulta médica presencial. Los resultados de los tratamientos pueden variar según cada paciente.
             </p>
             <div className="pt-2">
+              <a href="/aviso-de-privacidad" className="text-sm text-primary hover:text-white transition-colors underline underline-offset-2" data-testid="link-aviso-privacidad">
+                Aviso de Privacidad
+              </a>
+            </div>
+            <div className="pt-1">
               <span className="text-xs text-slate-500">
                 Cédula Profesional: 2814883<br/>
                 Cédula Especialidad: 4255209

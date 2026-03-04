@@ -18,6 +18,7 @@ import LigamentoCruzado from "@/pages/LigamentoCruzado";
 import Artrosis from "@/pages/Artrosis";
 import DolorHombro from "@/pages/DolorHombro";
 import LesionesDeportivas from "@/pages/LesionesDeportivas";
+import AvisoPrivacidad from "@/pages/AvisoPrivacidad";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -42,6 +43,7 @@ function Router() {
       <Route path="/blog-admin" component={BlogAdmin} />
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
+      <Route path="/aviso-de-privacidad" component={AvisoPrivacidad} />
       <Route component={NotFound} />
     </Switch>
   );
