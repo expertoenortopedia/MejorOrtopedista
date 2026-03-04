@@ -40,7 +40,7 @@ export default function Home() {
               </div>
               
               <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] text-foreground">
-                Ortopedista en Estado de México <span className="text-primary italic">especialista en rodilla y hombro</span>
+                Ortopedista y Traumatólogo en Cuautitlán Izcalli
               </h1>
               
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
@@ -114,8 +114,7 @@ export default function Home() {
       <section id="especialidad" className="py-24 bg-white relative">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-primary font-bold tracking-wider uppercase text-sm mb-3">¿Qué te duele?</h2>
-            <h3 className="font-serif text-3xl md:text-4xl font-bold mb-6">No te acostumbres a vivir con dolor</h3>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">Especialista en lesiones de rodilla</h2>
             <p className="text-lg text-muted-foreground">
               Brindo diagnóstico y tratamiento preciso para lesiones y afecciones del sistema musculoesquelético. Explicado siempre en un lenguaje claro y comprensible.
             </p>
@@ -196,8 +195,7 @@ export default function Home() {
             
             <div className="space-y-8">
               <div>
-                <h2 className="text-primary font-bold tracking-wider uppercase text-sm mb-3">Enfoque médico</h2>
-                <h3 className="font-serif text-3xl md:text-4xl font-bold mb-6">Soluciones a tu medida, de menos a más</h3>
+                <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">Artroscopia de rodilla y hombro</h2>
                 <p className="text-lg text-muted-foreground">
                   Mi filosofía es agotar las opciones conservadoras antes de contemplar la cirugía. Analizamos tu caso a detalle para ofrecerte el tratamiento más efectivo y menos invasivo posible.
                 </p>
@@ -254,8 +252,8 @@ export default function Home() {
 
             <div className="lg:col-span-3 order-1 lg:order-2 space-y-8">
               <div>
-                <h2 className="text-primary font-bold tracking-wider uppercase text-sm mb-3">Tu Especialista</h2>
-                <h3 className="font-serif text-3xl md:text-4xl font-bold mb-4">Dr. Jorge Luis Córdova Fonseca</h3>
+                <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">Tratamiento de hombro doloroso</h2>
+                <h3 className="font-serif text-2xl font-bold mb-4 text-primary">Dr. Jorge Luis Córdova Fonseca</h3>
                 <p className="text-xl text-slate-600 font-medium mb-6">"Mi objetivo no es solo tratar lesiones, sino devolverte tu estilo de vida."</p>
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   Soy médico especialista en Ortopedia y Traumatología con subespecialidad en cirugía articular y artroscopia. Entiendo perfectamente la frustración y el miedo que causa el dolor limitante.
@@ -367,8 +365,8 @@ export default function Home() {
               <Shield className="w-4 h-4" />
               Seguros y Hospitales
             </div>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-slate-900 mb-2">
-              Trabajamos con tu seguro de gastos médicos
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-slate-900 mb-2" data-testid="text-heading-consulta">
+              Consulta de ortopedia en Estado de México
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Aceptamos las principales aseguradoras de gastos médicos mayores y atendemos en los mejores grupos hospitalarios de México.
