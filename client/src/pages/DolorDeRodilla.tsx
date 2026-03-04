@@ -219,8 +219,13 @@ export default function DolorDeRodilla() {
             </div>
             <div className="order-1 lg:order-2">
               <img
-                src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772653274721.png"
-                alt="Diagnóstico de rodilla por especialista"
+                src="https://res.cloudinary.com/dcuuvanw3/image/upload/v1772415646/ChatGPT_Image_1_mar_2026_07_40_32_p.m._ygzejw.png"
+                alt="Diagnóstico de dolor de rodilla por ortopedista especialista en Cuautitlán Izcalli"
+                title="Consulta de diagnóstico ortopédico de rodilla en Cuautitlán Izcalli"
+                width={800}
+                height={600}
+                loading="lazy"
+                decoding="async"
                 className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
               />
             </div>
