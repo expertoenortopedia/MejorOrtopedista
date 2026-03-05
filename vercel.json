@@ -49,6 +49,10 @@
     {
       "source": "/marketing",
       "destination": "/index.html"
+    },
+    {
+      "source": "/aviso-de-privacidad",
+      "destination": "/index.html"
     }
   ]
 }
