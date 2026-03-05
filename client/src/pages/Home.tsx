@@ -7,10 +7,9 @@ import {
 } from "lucide-react";
 import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import { KneeIcon } from "@/components/icons/KneeIcon";
-import { useQuery } from "@tanstack/react-query";
 import { Link } from "wouter";
 import { useState } from "react";
-import type { BlogPost } from "@shared/schema";
+import { blogPostsData } from "@/data/blogPosts";
 import heroImg from "@/assets/images/hero-medical.png";
 import doctorImg from "@/assets/images/doctor-portrait.png";
 
@@ -116,11 +115,7 @@ function TestimonialSlider() {
 export default function Home() {
   const WHATSAPP_LINK = "https://wa.me/525514961386?text=Hola%20Dr.%20Jorge,%20vengo%20de%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20agendar%20una%20cita.";
 
-  const { data: blogPosts } = useQuery<BlogPost[]>({
-    queryKey: ["/api/blog"],
-    queryFn: () => fetch("/api/blog").then(r => r.json()),
-  });
-  const recentPosts = blogPosts?.slice(0, 3) ?? [];
+  const recentPosts = blogPostsData.slice(0, 3);
 
   return (
     <div className="w-full bg-background overflow-hidden">
