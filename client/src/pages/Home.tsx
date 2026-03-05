@@ -481,7 +481,7 @@ export default function Home() {
                 title: "Google Reviews",
                 text: "Pacientes comparten su experiencia con el tratamiento y diagnóstico.",
                 button: "Ver reseñas en Google",
-                href: "https://www.google.com/maps",
+                href: "https://g.page/r/Ccw07mkYRG25EAE/review",
                 icon: "⭐"
               },
               {
