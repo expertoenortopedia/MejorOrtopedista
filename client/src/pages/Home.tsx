@@ -474,7 +474,7 @@ export default function Home() {
                 title: "Doctoralia",
                 text: "Consulta opiniones verificadas de pacientes sobre la atención ortopédica.",
                 button: "Ver opiniones en Doctoralia",
-                href: "https://www.doctoralia.com.mx",
+                href: "https://www.doctoralia.com.mx/jorge-luis-cordova-fonseca/ortopedista-traumatologo/naucalpan-de-juarez2",
                 icon: "🩺"
               },
               {
