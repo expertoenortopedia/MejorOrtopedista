@@ -3,55 +3,7 @@
   "outputDirectory": "dist/public",
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/dolor-de-rodilla-cuautitlan-izcalli",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/lesion-menisco-cuautitlan-izcalli",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/ligamento-cruzado-anterior-cuautitlan-izcalli",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/artrosis-rodilla-cadera-cuautitlan-izcalli",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/dolor-hombro-manguito-rotador-cuautitlan-izcalli",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/lesiones-deportivas-cuautitlan-izcalli",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/blog",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/blog/:slug",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/admin/blog",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/blog-admin",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/marketing",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/aviso-de-privacidad",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
