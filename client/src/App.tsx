@@ -73,11 +73,13 @@ function App() {
           <>
             <a
               href="/hombro-cuautitlan-izcalli"
-              className="fixed bottom-6 left-6 z-50 bg-blue-800 hover:bg-blue-900 text-white rounded-full px-5 py-3 shadow-2xl hover:scale-105 transition-all duration-300 text-sm font-semibold max-w-[200px] text-center leading-tight"
+              className="fixed bottom-6 left-6 z-50 text-white rounded-full px-5 py-3 shadow-2xl text-sm font-bold max-w-[210px] text-center leading-tight"
+              style={{ background: "linear-gradient(135deg, #c0392b, #e74c3c)", animation: "pulseHombro 2s ease-in-out infinite", boxShadow: "0 0 0 0 rgba(231,76,60,0.7)" }}
               data-testid="button-hombro-floating"
               aria-label="¿Me duele el hombro, qué puedo hacer?"
             >
-              ¿Me duele el hombro, qué puedo hacer?
+              <span className="absolute inset-0 rounded-full bg-red-500 opacity-30 animate-ping" style={{ animationDuration: "1.5s" }} />
+              <span className="relative">🔴 ¿Me duele el hombro, qué puedo hacer?</span>
             </a>
             <a
               href="https://wa.me/525514961386?text=Hola%20Dr.%20Jorge,%20me%20gustar%C3%ADa%20agendar%20una%20cita."
