@@ -63,6 +63,14 @@ function App() {
         </div>
         <Toaster />
         <a
+          href="/dolor-hombro-manguito-rotador-cuautitlan-izcalli"
+          className="fixed bottom-6 left-6 z-50 bg-blue-800 hover:bg-blue-900 text-white rounded-full px-5 py-3 shadow-2xl hover:scale-105 transition-all duration-300 text-sm font-semibold max-w-[200px] text-center leading-tight"
+          data-testid="button-hombro-floating"
+          aria-label="¿Me duele el hombro, qué puedo hacer?"
+        >
+          ¿Me duele el hombro, qué puedo hacer?
+        </a>
+        <a
           href="https://wa.me/525514961386?text=Hola%20Dr.%20Jorge,%20me%20gustar%C3%ADa%20agendar%20una%20cita."
           target="_blank"
           rel="noopener noreferrer"
