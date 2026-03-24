@@ -21,7 +21,7 @@ import LesionesDeportivas from "@/pages/LesionesDeportivas";
 import AvisoPrivacidad from "@/pages/AvisoPrivacidad";
 import HombroLanding from "@/pages/HombroLanding";
 
-const HIDDEN_LAYOUT_ROUTES = ["/hombro-cuautitlan-izcalli"];
+const HIDDEN_LAYOUT_ROUTES: string[] = [];
 
 function ScrollToTop() {
   const [location] = useLocation();
