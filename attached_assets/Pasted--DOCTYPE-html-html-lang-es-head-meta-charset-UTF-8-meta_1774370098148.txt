@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dolor de hombro en Cuautitlán Izcalli | Manguito rotador</title>
+<meta name="description" content="Especialista en dolor de hombro en Cuautitlán Izcalli. Diagnóstico preciso y tratamiento del manguito rotador. Agenda tu valoración.">
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #0a3d62;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h1, h2 {
+    color: #0a3d62;
+}
+
+.btn {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 15px 25px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-secondary {
+    background: #0a3d62;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Dolor de hombro en Cuautitlán Izcalli</h1>
+<p>Especialista en manguito rotador | Diagnóstico preciso y tratamiento basado en evidencia</p>
+
+<a href="https://wa.me/521XXXXXXXXXX?text=Hola%20doctor,%20tengo%20dolor%20de%20hombro%20y%20quiero%20valoración" class="btn">
+Agendar por WhatsApp
+</a>
+
+<a href="#contacto" class="btn btn-secondary">
+Agenda consulta
+</a>
+</header>
+
+<section>
+<h2>¿Te duele el hombro y no mejora?</h2>
+<ul>
+<li>Dolor al levantar el brazo</li>
+<li>Molestia al dormir sobre ese lado</li>
+<li>Pérdida de fuerza</li>
+<li>Limitación en actividades diarias</li>
+</ul>
+
+<p><strong>Estas lesiones pueden empeorar si no se tratan a tiempo.</strong></p>
+
+<a href="https://wa.me/521XXXXXXXXXX?text=Hola%20doctor,%20tengo%20dolor%20de%20hombro" class="btn">
+Quiero valoración
+</a>
+</section>
+
+<section>
+<h2>¿Qué puede estar causando tu dolor?</h2>
+<p>Una de las causas más frecuentes es la lesión del manguito rotador, un grupo de tendones responsables de la movilidad y estabilidad del hombro.</p>
+
+<p>Sin tratamiento adecuado, estas lesiones pueden progresar y afectar tu calidad de vida.</p>
+</section>
+
+<section>
+<h2>Opciones de tratamiento</h2>
+
+<h3>Tratamiento conservador</h3>
+<p>Medicamentos, rehabilitación y modificación de actividades.</p>
+
+<h3>Infiltraciones</h3>
+<p>Indicadas en casos seleccionados para disminuir dolor e inflamación.</p>
+
+<h3>Cirugía</h3>
+<p>Solo en casos necesarios, cuando el tratamiento conservador no es suficiente.</p>
+
+<a href="https://wa.me/521XXXXXXXXXX?text=Hola%20doctor,%20quiero%20una%20valoración%20de%20hombro" class="btn">
+Agendar valoración
+</a>
+</section>
+
+<section>
+<h2>Enfoque médico honesto</h2>
+<p>No todos los pacientes requieren cirugía. La decisión se toma después de una valoración completa, explicando cada opción de tratamiento.</p>
+
+<p><strong>El objetivo es resolver tu problema con el tratamiento más adecuado, no el más invasivo.</strong></p>
+</section>
+
+<section>
+<h2>¿Cuándo debes acudir a valoración?</h2>
+<ul>
+<li>Dolor persistente por más de 2 semanas</li>
+<li>Dificultad para mover el brazo</li>
+<li>Dolor nocturno constante</li>
+<li>Lesión después de caída o esfuerzo</li>
+</ul>
+
+<a href="https://wa.me/521XXXXXXXXXX?text=Hola%20doctor,%20quiero%20valoración" class="btn">
+Agenda ahora
+</a>
+</section>
+
+<section id="contacto">
+<h2>Ubicación</h2>
+<p>Consulta en Cuautitlán Izcalli, Estado de México.</p>
+<p>Atención a pacientes de Tultitlán, Coacalco, Tlalnepantla y zona norte de CDMX.</p>
+</section>
+
+<footer>
+<p>Ortopedista en Cuautitlán Izcalli | Especialista en hombro</p>
+</footer>
+
+<a href="https://wa.me/521XXXXXXXXXX?text=Hola%20doctor,%20tengo%20dolor%20de%20hombro" class="whatsapp-float">
+WhatsApp
+</a>
+
+</body>
+</html>
