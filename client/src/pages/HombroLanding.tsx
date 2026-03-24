@@ -12,26 +12,35 @@ export default function HombroLanding() {
   return (
     <div style={{ fontFamily: "Arial, sans-serif", margin: 0, lineHeight: 1.6, color: "#333" }}>
 
-      <header style={{ background: "#0a3d62", color: "white", padding: "40px 20px", textAlign: "center" }}>
-        <h1 style={{ color: "white", marginBottom: "10px" }}>Dolor de hombro en Cuautitlán Izcalli</h1>
-        <p style={{ marginBottom: "20px" }}>Especialista en manguito rotador | Diagnóstico preciso y tratamiento basado en evidencia</p>
-        <a
-          href={WHATSAPP_LINK}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ display: "inline-block", background: "#25D366", color: "white", padding: "15px 25px", margin: "8px", textDecoration: "none", borderRadius: "5px", fontWeight: "bold" }}
-        >
-          Agendar por WhatsApp
-        </a>
-        <a
-          href="#contacto"
-          style={{ display: "inline-block", background: "#1a5276", color: "white", padding: "15px 25px", margin: "8px", textDecoration: "none", borderRadius: "5px", fontWeight: "bold" }}
-        >
-          Agenda consulta
-        </a>
+      <header style={{ background: "#0a3d62", color: "white", textAlign: "center" }}>
+        <nav style={{ background: "rgba(0,0,0,0.25)", padding: "12px 20px", display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "8px" }}>
+          <a href="#sintomas" style={{ color: "white", textDecoration: "none", padding: "6px 14px", borderRadius: "20px", fontSize: "14px", background: "rgba(255,255,255,0.1)", fontWeight: "500" }}>Síntomas</a>
+          <a href="#causas" style={{ color: "white", textDecoration: "none", padding: "6px 14px", borderRadius: "20px", fontSize: "14px", background: "rgba(255,255,255,0.1)", fontWeight: "500" }}>Causas</a>
+          <a href="#tratamientos" style={{ color: "white", textDecoration: "none", padding: "6px 14px", borderRadius: "20px", fontSize: "14px", background: "rgba(255,255,255,0.1)", fontWeight: "500" }}>Tratamientos</a>
+          <a href="#cuando" style={{ color: "white", textDecoration: "none", padding: "6px 14px", borderRadius: "20px", fontSize: "14px", background: "rgba(255,255,255,0.1)", fontWeight: "500" }}>¿Cuándo consultar?</a>
+          <a href="#contacto" style={{ color: "white", textDecoration: "none", padding: "6px 14px", borderRadius: "20px", fontSize: "14px", background: "rgba(255,255,255,0.1)", fontWeight: "500" }}>Ubicación</a>
+        </nav>
+        <div style={{ padding: "40px 20px" }}>
+          <h1 style={{ color: "white", marginBottom: "10px" }}>Dolor de hombro en Cuautitlán Izcalli</h1>
+          <p style={{ marginBottom: "20px" }}>Especialista en manguito rotador | Diagnóstico preciso y tratamiento basado en evidencia</p>
+          <a
+            href={WHATSAPP_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: "inline-block", background: "#25D366", color: "white", padding: "15px 25px", margin: "8px", textDecoration: "none", borderRadius: "5px", fontWeight: "bold" }}
+          >
+            Agendar por WhatsApp
+          </a>
+          <a
+            href="#contacto"
+            style={{ display: "inline-block", background: "#1a5276", color: "white", padding: "15px 25px", margin: "8px", textDecoration: "none", borderRadius: "5px", fontWeight: "bold" }}
+          >
+            Agenda consulta
+          </a>
+        </div>
       </header>
 
-      <section style={{ padding: "40px 20px", maxWidth: "900px", margin: "auto" }}>
+      <section id="sintomas" style={{ padding: "40px 20px", maxWidth: "900px", margin: "auto" }}>
         <h2 style={{ color: "#0a3d62" }}>¿Te duele el hombro y no mejora?</h2>
         <ul style={{ paddingLeft: "20px" }}>
           <li>Dolor al levantar el brazo</li>
@@ -50,13 +59,13 @@ export default function HombroLanding() {
         </a>
       </section>
 
-      <section style={{ padding: "40px 20px", maxWidth: "900px", margin: "auto" }}>
+      <section id="causas" style={{ padding: "40px 20px", maxWidth: "900px", margin: "auto" }}>
         <h2 style={{ color: "#0a3d62" }}>¿Qué puede estar causando tu dolor?</h2>
         <p>Una de las causas más frecuentes es la lesión del manguito rotador, un grupo de tendones responsables de la movilidad y estabilidad del hombro.</p>
         <p>Sin tratamiento adecuado, estas lesiones pueden progresar y afectar tu calidad de vida.</p>
       </section>
 
-      <section style={{ padding: "40px 20px", maxWidth: "900px", margin: "auto" }}>
+      <section id="tratamientos" style={{ padding: "40px 20px", maxWidth: "900px", margin: "auto" }}>
         <h2 style={{ color: "#0a3d62" }}>Opciones de tratamiento</h2>
         <h3 style={{ color: "#0a3d62" }}>Tratamiento conservador</h3>
         <p>Medicamentos, rehabilitación y modificación de actividades.</p>
@@ -80,7 +89,7 @@ export default function HombroLanding() {
         <p><strong>El objetivo es resolver tu problema con el tratamiento más adecuado, no el más invasivo.</strong></p>
       </section>
 
-      <section style={{ padding: "40px 20px", maxWidth: "900px", margin: "auto" }}>
+      <section id="cuando" style={{ padding: "40px 20px", maxWidth: "900px", margin: "auto" }}>
         <h2 style={{ color: "#0a3d62" }}>¿Cuándo debes acudir a valoración?</h2>
         <ul style={{ paddingLeft: "20px" }}>
           <li>Dolor persistente por más de 2 semanas</li>
