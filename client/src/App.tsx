@@ -73,7 +73,7 @@ function App() {
           <>
             <a
               href="/hombro-cuautitlan-izcalli"
-              className="fixed bottom-6 left-6 z-50 text-white rounded-full px-5 py-3 shadow-2xl text-sm font-bold max-w-[210px] text-center leading-tight"
+              className="fixed bottom-28 left-6 z-50 text-white rounded-full px-5 py-3 shadow-2xl text-sm font-bold max-w-[210px] text-center leading-tight"
               style={{ background: "linear-gradient(135deg, #c0392b, #e74c3c)", animation: "pulseHombro 2s ease-in-out infinite", boxShadow: "0 0 0 0 rgba(231,76,60,0.7)" }}
               data-testid="button-hombro-floating"
               aria-label="¿Me duele el hombro, qué puedo hacer...?"
